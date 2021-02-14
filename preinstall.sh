@@ -88,9 +88,14 @@ then
 		cd $PGM
 		ln -S $PWD/STAR-2.7.7a.tar.gz $PWD/bin
 	fi
+	
+	#Instalacion
 
+	pip3 install gffutils	
+	pip3 install bcbio-gff	
 	pip3 install HTseq
 	pip3 install multiqc
+	sudo apt install ncbi-entrez-direct
 fi
 
 
