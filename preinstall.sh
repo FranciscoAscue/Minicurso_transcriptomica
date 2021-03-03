@@ -81,7 +81,7 @@ echo "--------------------------------------------------------------------------
 
 if [ -x $(command -v curl) ]
 then
-	sudo apt install fastqc cutadapt samtools subread stringtie sortmerna rna_star
+	sudo apt install fastqc cutadapt samtools subread stringtie sortmerna rna-star
 	curl -fsSL https://github.com/FelixKrueger/TrimGalore/archive/0.6.6.tar.gz -o trim_galore.tar.gz
 	if [ -s "trim_galore.tar.gz" ]
 	then
