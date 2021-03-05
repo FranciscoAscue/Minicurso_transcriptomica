@@ -1,3 +1,11 @@
+## Descarga del repositorio
+
+`git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git`   
+
+### Instale los programas que se van a utilizar en el curso
+
+`bash preinstall.sh`
+
 ## Acerca del curso
 
 <p style="text-align: justify">Obtener el transcriptoma consiste en secuenciar el ARNm total de un organismo bajo condiciones muy específicas. La transcriptómica es una de las herramientas más utilizadas hoy en día para encontrar respuestas a interrogantes biológicas sobre el estado de una célula encontrando aplicabilidad en todas las ramas de las ciencias biológicas. Sin embargo, para realizarla es necesario instruirse sobre la ejecución de programas bioinformáticos y tener comprensión sobre los conocimientos que involucra lidiar con datos de RNA-seq.
@@ -48,15 +56,20 @@ En ese sentido, el presente curso fue pensado para entrenar investigadores con c
 |12:00 pm - 1:30 pm|-|Almuerzo|-|
 |1:30 pm - 3:30 pm|Carlo Gustavo Mormontoy|Bloque II: Normalización y expresión diferencial.|DEseq2, Vennt, EnhancedVolcano|
 |3:30 pm - 4:30 pm|Carlo Gustavo Mormontoy|Bloque III: Anotación funcional y enriquecimiento.|Blast2GO, Cytoscape (BiNGO)|
-
+|4:30 pm - 6:00 pm|Francisco Ascue|Bloque IV: Expresión diferencial y miscellaneous.|ggplot, pheatmap, KEGG.db, GO,db|
 
 ## Sofwares y pacquetes
 
-DEseq2: https://bioconductor.org/packages/release/bioc/html/DESeq2.html   
-Vennt: https://github.com/drpowell/vennt  
-EnhancedVolcano: https://github.com/kevinblighe/EnhancedVolcano   
-Blast2GO: https://www.blast2go.com/ (Free Trial)   
-Cytoscape: https://cytoscape.org/   
+Samtools: https://github.com/samtools/samtools    
+Stringtie: https://github.com/gpertea/stringtie    
+featureCounts: https://pubmed.ncbi.nlm.nih.gov/24227677/    
+SortMeRNA: https://bioinfo.lifl.fr/RNA/sortmerna/     
+STAR: https://github.com/alexdobin/STAR     
+DEseq2: https://bioconductor.org/packages/release/bioc/html/DESeq2.html     
+Vennt: https://github.com/drpowell/vennt     
+EnhancedVolcano: https://github.com/kevinblighe/EnhancedVolcano     
+Blast2GO: https://www.blast2go.com/ (Free Trial)    
+Cytoscape: https://cytoscape.org/     
 BiNGO: https://www.psb.ugent.be/cbd/papers/BiNGO/Home.html   
 
 
