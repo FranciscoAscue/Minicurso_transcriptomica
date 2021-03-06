@@ -98,14 +98,12 @@ echo "--------------------------------------------------------------------------
 echo "-----------------------------------------------------------------------------------------------------------------"
 
 #####Programs Bioinfo
-set -e 
-
-sudo apt-get install fastqc cutadapt samtools subread stringtie sortmerna rna-star ncbi-entrez-direct
-
 
 if [ -x $(command -v curl) ]
 then
 	set -e
+	
+	sudo apt-get install fastqc cutadapt samtools subread stringtie sortmerna rna-star ncbi-entrez-direct
 
 	curl -fsSL https://github.com/FelixKrueger/TrimGalore/archive/0.6.6.tar.gz -o trim_galore.tar.gz
 	if [ -s "trim_galore.tar.gz" ]
@@ -117,8 +115,6 @@ fi
 
 
 #Instalacion adicional
-
-set -e 
 
 pip3 install gffutils	
 pip3 install bcbio-gff	
