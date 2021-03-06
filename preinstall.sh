@@ -69,7 +69,7 @@ then
 	pip3 install bash_kernel
 	python3 -m bash_kernel.install
 	echo "-------------------------------${yellow}Instalando paquetes de compilacion${green}----------------------------"
-	sudo apt-get install gcc make-guile ubuntu-make make build-essential libexpat1-dev
+	sudo apt-get install gcc make-guile build-essential libexpat1-dev
 fi
 
 
