@@ -101,7 +101,7 @@ echo "--------------------------------------------------------------------------
 
 if [ -x $(command -v apt-get) ]
 then
-	sudo apt-get install fastqc cutadapt samtools subread stringtie sortmerna rna-star ncbi-entrez-direct
+	sudo apt-get install fastqc cutadapt samtools subread stringtie sortmerna rna-star ncbi-entrez-direct -y
 fi
 
 ##### Trim_galore
