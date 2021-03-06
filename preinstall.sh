@@ -99,8 +99,12 @@ echo "--------------------------------------------------------------------------
 
 #####Programs Bioinfo
 
+if [ -x $(command -v apt-get) ]
+then
+	sudo apt-get install fastqc cutadapt samtools subread stringtie sortmerna rna-star ncbi-entrez-direct
+fi
 
-sudo apt-get install fastqc cutadapt samtools subread stringtie sortmerna rna-star ncbi-entrez-direct
+##### Trim_galore
 
 if [ -x $(command -v curl) ]
 then
