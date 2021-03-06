@@ -86,21 +86,15 @@ then
 	echo "-----------------------------------------------------------------------------------------------------------------"
 
 	sudo apt-get install gcc make-guile build-essential libexpat1-dev fastqc cutadapt samtools subread stringtie sortmerna rna-star ncbi-entrez-direct -y
-fi
+	## directorio de ejecutables
 
+	mkdir -p Programas/bin
+	PGM="$PWD/Programas"
+	export PATH='${PGM}/bin:$PATH' >> ~/.bashrc
 
-### Instalacion de Programas bioinfo
+	### trim_galore
+	cd $PGM
 
-mkdir -p Programas/bin
-PGM="$PWD/Programas"
-export PATH='${PGM}/bin:$PATH' >> ~/.bashrc
-
-cd $PGM
-
-##### Trim_galore
-
-if [ -x $(command -v curl) ]
-then
 	curl -fsSL https://github.com/FelixKrueger/TrimGalore/archive/0.6.6.tar.gz -o trim_galore.tar.gz
 	if [ -s "trim_galore.tar.gz" ]
 	then
@@ -108,15 +102,13 @@ then
 		ln -s $PWD/TrimGalore-0.6.6/trim_galore $PWD/bin/
 	fi
 
+
 fi
 
-
-#Instalacion adicional
-
-pip3 install gffutils	
-pip3 install bcbio-gff	
-pip3 install HTseq
-pip3 install multiqc
+#pip3 install gffutils	
+#pip3 install bcbio-gff	
+#pip3 install HTseq
+#pip3 install multiqc
 
 echo "........................................................................................................................................"
 echo "........................................................................................................................................"
