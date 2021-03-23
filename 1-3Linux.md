@@ -1,14 +1,29 @@
-# COMANDO PRÁCTICOS
+## COMANDO PRÁCTICOS
+
+
+
+## CONTENIDO
+
+- [BASH PIPELINES](#bash-pipelines)
+- [Basic awk & sed](#basic-awk--sed)
+- [awk & sed for bioinformatics](#awk--sed-for-bioinformatics)
+- [sort, uniq, cut, etc.](#sort-uniq-cut-etc)
+- [find, xargs, and GNU parallel](#find-xargs-and-gnu-parallel)
+- [seqtk](#seqtk)
+- [GFF3 Annotations](#gff3-annotations)
+- [Other generally useful aliases for your .bashrc](#other-generally-useful-aliases-for-your-bashrc)
+- [Etc.](#etc)
+
 
 ## BASH PIPELINES
 
-## Eliminar espacios en blanco
+### Eliminar espacios en blanco
 
-### `sed '/^$/d' file.txt`
+    `sed '/^$/d' file.txt`
 
-### `grep . file.txt`
+    `grep . file.txt`
 
-### `grep "\S" file.txt`
+    `grep "\S" file.txt`
 
 
 ## Imprimir lineas entre rangos
