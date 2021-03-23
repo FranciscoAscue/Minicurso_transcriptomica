@@ -1,6 +1,8 @@
 ## COMANDO PRÁCTICOS
 
+Es sabido que los lenguajes tienen una tarea en la que brillan, en el caso de bash, esa tarea es la automatización de tareas en la cual se integran diversas herramientas.
 
+En el día a día como programador uno pasa bastante tiempo en la consola y es como un centro de operaciones en el que cualquier comando está a un comando de distancia, bash tiene a su disposición el mismo centro de operaciones.
 
 ## CONTENIDO
 
@@ -59,10 +61,5 @@
 
 ```awk '{print $3}' sequence.gff3 | sort -d | uniq -c```
 
-
-
-```bash
-
-```
 
 
