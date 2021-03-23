@@ -5,7 +5,9 @@ Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioi
 ## CONTENIDO
 
 - [BASH PIPELINES](#bash-pipelines)
-- [Basic awk & sed](#basic-awk--sed)
+- [PYTHON SCRIPTS](#python-scripts)
+- [R SCRIPTS](#r-scripts)
+- [ENTREZ NCBI PERL](#entrez-ncbi-perl)
 
 
 ## BASH PIPELINES
@@ -58,6 +60,12 @@ Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioi
     grep $'\tgene\t' sequence.gff3 | awk '{print $5-$4";"$9}'| sed 's/Name=//g' | awk -F';' '{print $3"\t"$1}' | sort -k2n  > Tamaño_genes.txt
 
 ```awk '{print $3}' sequence.gff3 | sort -d | uniq -c```
+
+## PYTHON SCRIPTS 
+
+## R SCRIPTS
+
+## ENTREZ NCBI PERL
 
 
 
