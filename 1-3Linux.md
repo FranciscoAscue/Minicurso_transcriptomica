@@ -45,9 +45,9 @@
 
 ### `grep $'\tgene\t' sequence.gff3 | awk '{print $9}' | cut -d';' -f1 | sed "s/ID=//g"`
 
-## Mesclando scripts
+## Mesclando scripts:
 
-### ```grep $'\tgene\t' sequence.gff3 | awk '{print $5-$4";"$9}'| sed 's/Name=//g' | awk -F';' '{print $3"\t"$1}' | sort -k2n  > Tamaño_genes.txt```
+    grep $'\tgene\t' sequence.gff3 | awk '{print $5-$4";"$9}'| sed 's/Name=//g' | awk -F';' '{print $3"\t"$1}' | sort -k2n  > Tamaño_genes.txt
 
 ### ```awk '{print $3}' sequence.gff3 | sort -d | uniq -c```
 
