@@ -1,6 +1,3 @@
-## COMANDO PRÁCTICOS
-
-Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioinformatica, entre ellos linux representa una ventaja por que la terminal con la que nos comunicamos con linux corre un lenguaje de programación (BASH), al igual que otros lenguajes de programación nos permite la automatización de tareas en la cual se integran diversas herramientas. Como estaremos trabajando en el CLI cualquier comando está a un comando de distancia, bash tiene a su disposición el mismo centro de operaciones.
 
 ## CONTENIDO
 
@@ -11,7 +8,9 @@ Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioi
 
 
 ## BASH PIPELINES
+### COMANDO PRÁCTICOS
 
+Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioinformatica, entre ellos linux representa una ventaja por que la terminal con la que nos comunicamos con linux corre un lenguaje de programación (BASH), al igual que otros lenguajes de programación nos permite la automatización de tareas en la cual se integran diversas herramientas. Como estaremos trabajando en el CLI cualquier comando está a un comando de distancia, bash tiene a su disposición el mismo centro de operaciones.
 ### Eliminar espacios en blanco
 
     sed '/^$/d' file.txt
@@ -61,11 +60,21 @@ Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioi
 
 ```awk '{print $3}' sequence.gff3 | sort -d | uniq -c```
 
-## PYTHON SCRIPTS 
+## PYTHON SCRIPTS
+
+
+    from Bio import Entrez
+
+    Entrez.email = "francisco.ascue@unmsm.edu.pe"
+    handle = Entrez.efetch(db="Nucleotide", id="AY994334.1",rettype="fasta",retmode="text")
+    print(handle.read())
 
 ## R SCRIPTS
+    install.package("BiocManager")
+
 
 ## ENTREZ NCBI PERL
+    esearch -db $"" -query $"" 
 
 
 
