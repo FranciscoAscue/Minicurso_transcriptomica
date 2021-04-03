@@ -1,3 +1,7 @@
+![](Images/descarga.jpeg)
+
+
+
 ## Descarga del repositorio
 
 `git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git`   
@@ -6,12 +10,8 @@
 
 `bash preinstall.sh`
 
-## Acerca del curso
 
-<p style="text-align: justify">Obtener el transcriptoma consiste en secuenciar el ARNm total de un organismo bajo condiciones muy específicas. La transcriptómica es una de las herramientas más utilizadas hoy en día para encontrar respuestas a interrogantes biológicas sobre el estado de una célula encontrando aplicabilidad en todas las ramas de las ciencias biológicas. Sin embargo, para realizarla es necesario instruirse sobre la ejecución de programas bioinformáticos y tener comprensión sobre los conocimientos que involucra lidiar con datos de RNA-seq.
-En ese sentido, el presente curso fue pensado para entrenar investigadores con conocimientos bioinformáticos interesados en utilizar esta potente herramienta en sus trabajos.</p>
-
-
+![](Images/descarga2.jpg)
 
 ## Objetivo
 
