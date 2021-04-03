@@ -1,7 +1,3 @@
-![](Images/descarga.jpeg)
-
-
-
 ## Descarga del repositorio
 
 `git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git`   
@@ -73,3 +69,4 @@ Cytoscape: https://cytoscape.org/
 BiNGO: https://www.psb.ugent.be/cbd/papers/BiNGO/Home.html   
 
 
+![](Images/descarga.jpeg)
