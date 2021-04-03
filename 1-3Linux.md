@@ -99,6 +99,8 @@ Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioi
     library(viridis)
     library(RColorBrewer)
     display.brewer.all()
+  
+ ![](Images/paletas.png)
     
 
 ## ENTREZ NCBI PERL
