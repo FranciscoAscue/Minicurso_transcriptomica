@@ -1,0 +1,34 @@
+#!/bin/bash
+#####################################################################################################################
+#					WORK SPACE AND DOWNLOAD GENOME REFERENCE			    	    #
+#						  BY: FRANCISCO ASCUE						    #
+#					email: francisco.ascue131@gmail.com					    #
+#####################################################################################################################
+
+### Inputs
+
+PJT=$1
+GF=$2
+reads=$3
+name=$4
+
+### Make tree directory 
+
+echo "started at `date`"
+
+echo "mkdir -p $PJT/{data/{reads,reference},results,scripts/logs}"
+mkdir -p $PJT/{data/{reads,reference},results,scripts/logs}
+
+### Download reference genome
+echo "esearch -db nucleotide -query "$GF" | efetch -format fasta > ${GF}.fasta"
+esearch -db nucleotide -query "$GF" | efetch -format fasta > $PJT/data/reference/${GF}.fasta
+
+### Reads simulation
+echo "wgsim -1151 -2151 -d300 -r0 -e0 -N"${reads}" -R0 -X0 ${GF}.fastq ${name}_1.fastq ${name}_2.fasta"
+wgsim -1151 -2151 -d300 -r0 -e0 -N"${reads}" -R0 -X0 $PJT/data/reference/${GF}.fasta $PJT/data/reads/${name}_1.fastq $PJT/data/reads/${name}_2.fastq
+
+echo "Numbers of reads (forward and reverse)"
+cat $PJT/data/reads/${name}_1.fastq $PJT/data/reads/${name}_2.fastq | echo $((`wc -l`/4))
+
+echo "Finished at `date`"
+
