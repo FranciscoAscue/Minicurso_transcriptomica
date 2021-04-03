@@ -39,7 +39,7 @@
 |11:00 am - 12:00 pm|Francisco Ascue|Programas y lenguajes para Bioinformática|[biopython, bioconductor, bioperl.](1-3Linux.md)|
 |12:00 pm - 1:30 pm|-|Receso|-|
 |1:30 pm - 2:30 pm|Francisco Ascue|Pipelines y Scripts para Bioinformática|[bash script](4-6Linux.md)|
-|2:30 pm - 3:30 pm|Francisco Ascue|Archivos y formatos para datos de NGS|[fastq](Imagenes/.png),[sam](Imagenes/descarga.jpeg)|
+|2:30 pm - 3:30 pm|Francisco Ascue|Archivos y formatos para datos de NGS|[fastq](Imagenes/.png),[sam](Images/descarga.jpeg)|
 |3:30 pm - 5:00 pm|Francisco Ascue|Procesamiento de datos de NGS|fastqc, trimmomatic, bowtie2, spades|
 
 **Introducción a Transcriptomica**
