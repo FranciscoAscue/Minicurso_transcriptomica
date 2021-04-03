@@ -70,7 +70,12 @@ Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioi
     print(handle.read())
 
 ## R SCRIPTS
+
+### Instalando Packages
+
     install.package("BiocManager")
+    
+    BiocManager::install("")
 
 
 ## ENTREZ NCBI PERL
