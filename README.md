@@ -35,12 +35,12 @@
 | Horario  |  Presentador  |  Actividad | Programas a utilizar |
 |:----------:|:-------------:|:-----------:|:---------------------:|
 |10:00 am-10:30 am |Francisco Ascue|Introducción|-|
-|10:30 am - 11:00 am |Francisco Ascue| Entorno Linux (¿ Por qué usar Linux ?), Comandos prácticos|bash, awk[ver manual](1-3Linux.md)|
-|11:00 am - 12:00 pm|Francisco Ascue|Programas y lenguajes para Bioinformática|biopython, bioconductor, bioperl.[ver manual](1-3Linux.md)|
+|10:30 am - 11:00 am |Francisco Ascue| Entorno Linux (¿ Por qué usar Linux ?), Comandos prácticos|bash, awk [ver manual](1-3Linux.md)|
+|11:00 am - 12:00 pm|Francisco Ascue|Programas y lenguajes para Bioinformática|biopython, bioconductor, bioperl. [ver manual](1-3Linux.md)|
 |12:00 pm - 1:30 pm|-|Receso|-|
 |1:30 pm - 2:30 pm|Francisco Ascue|Pipelines y Scripts para Bioinformática|bash script[ver manual](4-6Linux.md)|
 |2:30 pm - 3:30 pm|Francisco Ascue|Archivos y formatos para datos de NGS|[FastQ](Images/.png),[Sam](Images/descarga.jpeg), [GFF3](Images/), [GTF](Images/), [VCF](Images/)|
-|3:30 pm - 5:00 pm|Francisco Ascue|Procesamiento de datos de NGS|fastqc, trimmomatic, bowtie2, spades[ver manual](Linux.md)|
+|3:30 pm - 5:00 pm|Francisco Ascue|Procesamiento de datos de NGS|fastqc, trimmomatic, bowtie2, spades [ver manual](Linux.md)|
 
 **Introducción a Transcriptomica**
 
@@ -48,7 +48,7 @@
 |:----------:|:-------------:|:-----------:|:---------------------:|
 |09:00 am-9:30 am |Carlo Gustavo Mormontoy|Presentación e introducción al curso.|-|
 |9:30 am - 10:00 am |-|Revisión de programas y soporte de instalación|-|
-|10:00 am - 12:00 pm|Francisco Ascue|Bloque I: Análisis de secuencias: mapeo, recuento y ensamblaje.|STAR, featureCounts, SortMeRNA, Samtools[ver manual]()|
+|10:00 am - 12:00 pm|Francisco Ascue|Bloque I: Análisis de secuencias: mapeo, recuento y ensamblaje.|STAR, featureCounts, SortMeRNA, Samtools [ver manual]()|
 |12:00 pm - 1:30 pm|-|Almuerzo|-|
 |1:30 pm - 3:30 pm|Carlo Gustavo Mormontoy|Bloque II: Normalización y expresión diferencial.|DEseq2, Vennt, EnhancedVolcano|
 |3:30 pm - 4:30 pm|Carlo Gustavo Mormontoy|Bloque III: Anotación funcional y enriquecimiento.|Blast2GO, Cytoscape (BiNGO)|
