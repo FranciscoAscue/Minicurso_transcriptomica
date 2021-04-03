@@ -36,7 +36,7 @@
 |:----------:|:-------------:|:-----------:|:---------------------:|
 |10:00 am-10:30 am |Francisco Ascue|Introducción|-|
 |10:30 am - 11:00 am |Francisco Ascue| Entorno Linux ( ¿ Por qué usar Linux ? ),     [Comandos prácticos](1-3Linux.md)|-|
-|11:00 am - 12:00 pm|Francisco Ascue|Programas y lenguajes para Bioinformática|[biopython, bioconductor, bioperl.](1-3Linux.md)|
+|11:00 am - 12:00 pm|Francisco Ascue|[Programas y lenguajes para Bioinformática](1-3Linux.md)|biopython, bioconductor, bioperl.|
 |12:00 pm - 1:30 pm|-|Receso|-|
 |1:30 pm - 2:30 pm|Francisco Ascue|Pipelines y Scripts para Bioinformática|-|
 |2:30 pm - 3:30 pm|Francisco Ascue|Archivos y formatos para datos de NGS|-|
