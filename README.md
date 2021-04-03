@@ -1,8 +1,8 @@
-## Descarga del repositorio
+## Descargar repositorio
 
 `git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git`   
 
-### Instale los programas que se van a utilizar en el curso
+### Instalar programas
 
 `bash preinstall.sh`
 
