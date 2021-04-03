@@ -5,30 +5,135 @@
 #					email: francisco.ascue131@gmail.com					    #
 #####################################################################################################################
 
-### Inputs
+normal=$'\e[0m'
+bold=$(tput bold)                         # make colors bold/bright
+red="$bold$(tput setaf 1)"                # bright red text
+green=$(tput setaf 2)                     # dim green text
+fawn=$(tput setaf 3); beige="$fawn"       # dark yellow text
+yellow="$bold$fawn"                       # bright yellow text
+darkblue=$(tput setaf 4)                  # dim blue text
+blue="$bold$darkblue"                     # bright blue text
+purple=$(tput setaf 5); magenta="$purple" # magenta text
+pink="$bold$purple"                       # bright magenta text
+darkcyan=$(tput setaf 6)                  # dim cyan text
+cyan="$bold$darkcyan"                     # bright cyan text
+gray=$(tput setaf 7)                      # dim white text
+darkgray="$bold"$(tput setaf 0)           # bold black = dark gray text
+white="$bold$gray"                        # bright white text
 
-PJT=$1
-GF=$2
-reads=$3
-name=$4
 
-### Make tree directory 
 
-echo "started at `date`"
+usage="$(basename "$0") -- Program to create simulation reads for illumina sequencing in GNU/Linux.
 
-echo "mkdir -p $PJT/{data/{reads,reference},results,scripts/logs}"
+usage: $(basename "$0") -n <project> -g <N.A. NCBI> -r <20000> -f <fastqfile>
+where:
+    -h 			Show this help text
+    -n  <name>		Name of project
+    -g 	<N.A. NCBI>	N.A. of reference genome
+    -r  <number>	Number of reads simulated
+    -f  <str>		Name of fastq files
+    -s  <number>	set the seed value (default: 42)
+    -m	<float>		Rate of mutation of reference genome
+    -e	<float>		Rate of error sequencing simulation"
+
+## defaults
+
+seed=42
+PJT="Project"
+GF=""
+reads=3000
+name="file"
+rmutation=0
+rerror=0.001
+
+## getopts
+
+while getopts ':h:n:g:r:f:m:e:' option; do
+  case "$option" in
+    h) echo "${cyan}$usage"
+       exit
+       ;;
+    n) PJT="$OPTARG";;
+    g) GF="$OPTARG";;
+    r) reads=$OPTARG
+       ;;
+    f) name="$OPTARG";;
+    m) rmutation=$OPTARG;;
+    e) rerror=$OPTARG;;
+    :) printf "missing argument for -%s\n" "$OPTARG" >&2
+       echo "$usage" >&2
+       exit 1
+       ;;
+   \?) printf "illegal option: -%s\n" "$OPTARG" >&2
+       echo "$usage" >&2
+       exit 1
+       	;;
+  esac
+done
+shift $((OPTIND - 1))
+
+
+
+echo "${green}started at `date`${normal}"
+
+echo "${cyan}-------------------------------------------------------------"
+echo "--------------CREATE WORKING DIRECTORY------------------"
+echo "-------------------------------------------------------------"
+echo ""
+echo "── $PJT/
+   │   └── data/                   	<- Folder to store reads and references files
+   │       ├── reads/               	<- Reads illumina simulated
+   │           ├──file_1.fastq           <- Forward read
+   │           ├──file_2.fastq           <- Reverse read
+   │           
+   │       ├── reference/                <- Host genomes files (.fasta)
+   │           ├──NA_NCBI.fasta          <- NCBI download fasta file
+   │  
+   │   └── results/              	<- Folder to store data generated during processing steps
+   │  
+   │   └── scripts/                   	<- Folder to store scripts for data processing
+           ├── logs/        		<- Results logs during processing steps
+ ${normal}"
+echo ""
+
 mkdir -p $PJT/{data/{reads,reference},results,scripts/logs}
-
+echo "${blue}-------------------------------------------------------------"
+echo "--------------DOWNLOAD GENOME REFERENCE------------------"
+echo "-------------------------------------------------------------"
+echo "${normal}"
 ### Download reference genome
-echo "esearch -db nucleotide -query "$GF" | efetch -format fasta > ${GF}.fasta"
+echo "${fawn}"
+
+esearch -db nucleotide -query "$GF" | esummary | sed "s/></\n/g" | sed "s/>/\t/g" | sed "s/</\t/g" | awk 'NR>=6&&NR<=41'
+
+echo ""
 esearch -db nucleotide -query "$GF" | efetch -format fasta > $PJT/data/reference/${GF}.fasta
 
-### Reads simulation
-echo "wgsim -1151 -2151 -d300 -r0 -e0 -N"${reads}" -R0 -X0 ${GF}.fastq ${name}_1.fastq ${name}_2.fasta"
-wgsim -1151 -2151 -d300 -r0 -e0 -N"${reads}" -R0 -X0 $PJT/data/reference/${GF}.fasta $PJT/data/reads/${name}_1.fastq $PJT/data/reads/${name}_2.fastq
+echo "${red}-------------------------------------------------------------"
+echo "--------------READS ILLUMINA SIMULATION------------------"
+echo "-------------------------------------------------------------${normal}"
+echo "${green}"
 
-echo "Numbers of reads (forward and reverse)"
+### Reads simulation
+echo "wgsim -1151 -2151 -d300 -r"${rmutation}" -e"${rerror}" -N"${reads}" -R0 -X0 ${GF}.fastq ${name}_1.fastq ${name}_2.fasta"
+
+wgsim -1151 -2151 -d300 -r"${rmutation}" -e"${rerror}" -N"${reads}" -R0 -X0 $PJT/data/reference/${GF}.fasta $PJT/data/reads/${name}_1.fastq $PJT/data/reads/${name}_2.fastq
+
+for i in 0.01 0.005 0.001
+do
+	wgsim -1151 -2151 -d300 -e${i} -N"${reads}" -R0 -X0 $PJT/data/reference/${GF}.fasta $PJT/data/reads/${i}_1.fastq $PJT/data/reads/${i}_2.fastq
+	cat $PJT/data/reads/${i}_1.fastq >> $PJT/data/reads/${name}_1.fastq
+	cat $PJT/data/reads/${i}_2.fastq >> $PJT/data/reads/${name}_2.fastq
+	rm $PJT/data/reads/${i}_1.fastq $PJT/data/reads/${i}_2.fastq
+done
+
+
+echo "total reads simulated"
+echo "(forward and reverse)"
+
 cat $PJT/data/reads/${name}_1.fastq $PJT/data/reads/${name}_2.fastq | echo $((`wc -l`/4))
+
+echo "${purple}"
 
 echo "Finished at `date`"
 
