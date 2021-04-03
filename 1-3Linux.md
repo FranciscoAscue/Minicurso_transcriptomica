@@ -75,18 +75,31 @@ Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioi
 
     install.package("BiocManager")
     
-**cargando packages**
+**Cargando packages**
 
     library(BiocManager)
     
     BiocManager::install("ggplot2")
-    
+
+**Actualizando packages**
+
     install.packages(c("BiocManager","ggplot2")
     
+    update.packages(ask = FALSE)
+
+### Cargar tablas (csv, tsv)
+
+    read.table("datafile.ext", sep = ",", header = TRUE)
     
+    read.csv("datafile.csv")
+    
+### Cargar paletas de colores
 
-### 
-
+    library(viridisLite)
+    library(viridis)
+    library(RColorBrewer)
+    display.brewer.all()
+    
 
 ## ENTREZ NCBI PERL
     esearch -db $"" -query $"" 
