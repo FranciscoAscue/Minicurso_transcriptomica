@@ -75,7 +75,17 @@ Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioi
 
     install.package("BiocManager")
     
-    BiocManager::install("")
+**cargando packages**
+
+    library(BiocManager)
+    
+    BiocManager::install("ggplot2")
+    
+    install.packages(c("BiocManager","ggplot2")
+    
+    
+
+### 
 
 
 ## ENTREZ NCBI PERL
