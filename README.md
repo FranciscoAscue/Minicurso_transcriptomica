@@ -34,7 +34,7 @@
 
 | Horario  |  Presentador  |  Actividad | Programas a utilizar |
 |:----------:|:-------------:|:-----------:|:---------------------:|
-|10:00 am-10:30 am |Francisco Ascue|Introducción|-|
+|10:00 am-10:30 am |Francisco Ascue|[Introducción](1-3Linux.md)|-|
 |10:30 am - 11:00 am |Francisco Ascue|Entorno Linux (¿Por qué usar Linux?), Comandos prácticos|-|
 |11:00 am - 12:00 pm|Francisco Ascue|Programas y lenguajes para Bioinformática|biopython, bioperl, bioconductor.|
 |12:00 pm - 1:30 pm|-|Receso|-|
