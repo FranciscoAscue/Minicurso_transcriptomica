@@ -69,16 +69,33 @@ Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioi
 
 ## PYTHON SCRIPTS
 
-### Instalando Packages:
+### Instalando Packages
+    
+**Instalación de PIP**
+    
+    sudo apt-get install python3 python3-pip
+    
+    pip3 install biopython
+    
+    pip3 install Bio
 
+**Instalación conda** [ Miniconda ](https://docs.conda.io/en/latest/miniconda.html#installing) [ Anaconda ](https://www.anaconda.com/products/individual)
+
+    bash <Mini/A>conda3-latest-Linux-x86_64.sh
+    
+    conda install -c conda-forge biopython
+    
 ### Importando Packages
-
-### 
+```python 
     from Bio import Entrez
 
     Entrez.email = "francisco.ascue@unmsm.edu.pe"
+    
     handle = Entrez.efetch(db="Nucleotide", id="AY994334.1",rettype="fasta",retmode="text")
+    
     print(handle.read())
+    
+    ```python 
 
 ![](https://bcrf.biochem.wisc.edu/wp-content/uploads/sites/850/2018/12/featured-2.png)
 
