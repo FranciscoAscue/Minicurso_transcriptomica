@@ -74,29 +74,28 @@ awk '{print $3}' sequence.gff3 | sort -d | uniq -c
 ### Instalando Packages
     
 **Instalación de PIP**
-    
-    sudo apt-get install python3 python3-pip
-    
-    pip3 install biopython
-    
-    pip3 install Bio
+``` bash   
+sudo apt-get install python3 python3-pip
+
+pip3 install biopython
+
+pip3 install Bio
+```
 
 **Instalación conda** [ Miniconda ](https://docs.conda.io/en/latest/miniconda.html#installing) [ Anaconda ](https://www.anaconda.com/products/individual)
+``` bash
+bash <Mini/A>conda3-latest-Linux-x86_64.sh
 
-    bash <Mini/A>conda3-latest-Linux-x86_64.sh
-    
-    conda install -c conda-forge biopython
-    
+conda install -c conda-forge biopython
+```
 ### Importando Packages
 ``` python 
-    from Bio import Entrez
+from Bio import Entrez
+Entrez.email = "francisco.ascue@unmsm.edu.pe"
 
-    Entrez.email = "francisco.ascue@unmsm.edu.pe"
-    
-    handle = Entrez.efetch(db="Nucleotide", id="AY994334.1",rettype="fasta",retmode="text")
-    
-    print(handle.read())
-    
+handle = Entrez.efetch(db="Nucleotide", id="AY994334.1",rettype="fasta",retmode="text")
+
+print(handle.read())
 ``` 
 
 ![](https://bcrf.biochem.wisc.edu/wp-content/uploads/sites/850/2018/12/featured-2.png)
@@ -105,32 +104,33 @@ awk '{print $3}' sequence.gff3 | sort -d | uniq -c
 
 ### Instalando Packages
 ```r
-    install.package("BiocManager")
+install.package("BiocManager")
     
 ##Cargando packages
 
-    library(BiocManager)
+library(BiocManager)
     
-    BiocManager::install("ggplot2")
-```
+BiocManager::install("ggplot2")
+
 **Actualizando packages**
 
-    install.packages(c("BiocManager","ggplot2")
+install.packages(c("BiocManager","ggplot2")
     
-    update.packages(ask = FALSE)
+update.packages(ask = FALSE)
 
 ### Cargar tablas (csv, tsv)
 
-    read.table("datafile.ext", sep = ",", header = TRUE)
+read.table("datafile.ext", sep = ",", header = TRUE)
     
-    read.csv("datafile.csv")
+read.csv("datafile.csv")
     
 ### Cargar paletas de colores
 
-    library(viridisLite)
-    library(viridis)
-    library(RColorBrewer)
-    display.brewer.all()
+library(viridisLite)
+library(viridis)
+library(RColorBrewer)
+display.brewer.all()
+```
 ![](Images/paletas.png)
 
 ![](https://bioperl.co.uk/wp-content/uploads/2020/06/Bioperl-Logo-2020-600.png)
