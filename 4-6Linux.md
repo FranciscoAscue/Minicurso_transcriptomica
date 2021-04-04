@@ -1,4 +1,4 @@
-<img style="float: center;" src="https://3.bp.blogspot.com/-OV7EzcTdOE0/Wj6kx-JZdmI/AAAAAAAAJws/BE9j1Sv4wFAEV4zTMO-5yXao2U20zUYMACLcBGAs/s1600/fsociety_9.gif">
+![](https://i.pinimg.com/originals/87/0e/2b/870e2b603561af91cd073ab6d2679ff8.gif)
 
 ## CONTENIDO
 
