@@ -1,4 +1,4 @@
-<img src="https://78.media.tumblr.com/caa52add01c3234286dc688852ef33e5/tumblr_op0623jfYh1v22rhuo1_500.gif">
+<img style="float: center;" src="https://3.bp.blogspot.com/-OV7EzcTdOE0/Wj6kx-JZdmI/AAAAAAAAJws/BE9j1Sv4wFAEV4zTMO-5yXao2U20zUYMACLcBGAs/s1600/fsociety_9.gif">
 
 ## CONTENIDO
 
