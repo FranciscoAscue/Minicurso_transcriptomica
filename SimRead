@@ -23,9 +23,12 @@ white="$bold$gray"                        # bright white text
 
 
 
-usage="$(basename "$0") -- Program to create simulation reads for illumina sequencing in GNU/Linux.
+usage="$(basename "$0") -- Program to create simulation reads for illumina sequencing in GNU/Linux. 
+
+created by Francisco Ascue (francisco.ascue131@gmail.com)
 
 usage: $(basename "$0") -n <project> -g <N.A. NCBI> -r <20000> -f <fastqfile>
+
 where:
     -h 			Show this help text
     -n  <name>		Name of project
