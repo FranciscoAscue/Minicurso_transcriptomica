@@ -86,7 +86,7 @@ Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioi
     conda install -c conda-forge biopython
     
 ### Importando Packages
-```python 
+``` python 
     from Bio import Entrez
 
     Entrez.email = "francisco.ascue@unmsm.edu.pe"
@@ -95,22 +95,22 @@ Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioi
     
     print(handle.read())
     
-    ```python 
+``` 
 
 ![](https://bcrf.biochem.wisc.edu/wp-content/uploads/sites/850/2018/12/featured-2.png)
 
 ## R SCRIPTS
 
 ### Instalando Packages
-
+```r
     install.package("BiocManager")
     
-**Cargando packages**
+##Cargando packages
 
     library(BiocManager)
     
     BiocManager::install("ggplot2")
-
+```
 **Actualizando packages**
 
     install.packages(c("BiocManager","ggplot2")
