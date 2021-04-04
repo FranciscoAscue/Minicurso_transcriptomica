@@ -131,7 +131,8 @@ library(viridis)
 library(RColorBrewer)
 display.brewer.all()
 ``` 
-![](Images/paletas.png = 250x)
+<img src="Images/paletas.png" width="400">
+
 ``` r
 ### barplot basicos
 
@@ -140,15 +141,14 @@ barplot(height = gene$V1, border = FALSE, names.arg = gene$V2,
         col = heat.colors(25),
         main = "Genes por Cromosoma")
 ```
-![](Images/plotgenes.png)
+<img src="Images/plotgenes.png" width="500">
 
 ``` r
 ggplot(gene, aes(x=V2, y=V1)) +
   geom_segment( aes(x=V2, xend=V2, y=0, yend=V1)) +
   geom_point( size=5, color="red", fill=alpha("orange", 0.3), alpha=0.7, shape=21, stroke=2) 
 ```
-![](Images/lolipop.png)
-
+<img src="Images/lolipop.png" width="500">
 
 ![](https://bioperl.co.uk/wp-content/uploads/2020/06/Bioperl-Logo-2020-600.png)
 
