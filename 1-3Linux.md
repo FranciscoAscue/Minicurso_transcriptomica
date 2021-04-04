@@ -109,6 +109,24 @@ print(handle.read())
     sudo pip3 install dna_features_viewer
 
 ``` python
+from dna_features_viewer import GraphicFeature, GraphicRecord
+
+features=[
+    GraphicFeature(start=0, end=265, strand=+1, color="#ffd700",
+                   label="five_prime_UTR"),
+    GraphicFeature(start=266, end=21555, strand=+1, color="#ffcccc",
+                   label="ORF1ab"),
+    GraphicFeature(start=21563, end=25384, strand=-1, color="#cffccc",
+                   label="S"),
+    GraphicFeature(start=25393, end=26220, strand=+1, color="#ccccff",
+                   label="ORF3a")
+]
+record = GraphicRecord(sequence_length=26220, features=features)
+ax, _ = record.plot(figure_width=10)
+``` 
+![](Images/covid.png)
+
+``` python
 # import packages
 from Bio import Entrez, SeqIO
 from dna_features_viewer import annotate_biopython_record
