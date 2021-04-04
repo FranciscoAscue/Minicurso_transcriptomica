@@ -154,7 +154,7 @@ ax, _ = graphic_record.plot(figure_width=10, strand_in_label_threshold=7)
 ```
 <img src="Images/plot_record.png" width="500">
 
-![](https://bcrf.biochem.wisc.edu/wp-content/uploads/sites/850/2018/12/featured-2.png)
+![](https://blog.arsys.es/file/uploads/2020/10/featured-rstudio-1.jpg)
 
 ## R SCRIPTS
 
