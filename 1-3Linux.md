@@ -17,6 +17,7 @@
 Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioinformatica, entre ellos linux representa una ventaja por que la terminal con la que nos comunicamos con linux corre un lenguaje de programación (BASH), al igual que otros lenguajes de programación nos permite la automatización de tareas en la cual se integran diversas herramientas. Como estaremos trabajando en el CLI cualquier comando está a un comando de distancia, bash tiene a su disposición el mismo centro de operaciones.
 
 ### Eliminar espacios en blanco
+
 ``` bash
 sed '/^$/d' file.txt
 
@@ -74,6 +75,7 @@ awk '{print $3}' sequence.gff3 | sort -d | uniq -c
 ### Instalando Packages
     
 **Instalación de PIP**
+
 ``` bash   
 sudo apt-get install python3 python3-pip
 
@@ -83,26 +85,62 @@ pip3 install Bio
 ```
 
 **Instalación conda** [ Miniconda ](https://docs.conda.io/en/latest/miniconda.html#installing) [ Anaconda ](https://www.anaconda.com/products/individual)
+
 ``` bash
 bash <Mini/A>conda3-latest-Linux-x86_64.sh
 
 conda install -c conda-forge biopython
 ```
+
 ### Importando Packages
+
 ``` python 
+
 from Bio import Entrez
+
 Entrez.email = "francisco.ascue@unmsm.edu.pe"
 
 handle = Entrez.efetch(db="Nucleotide", id="AY994334.1",rettype="fasta",retmode="text")
 
 print(handle.read())
+
 ``` 
 
+    sudo pip3 install dna_features_viewer
+
+``` python
+# import packages
+from Bio import Entrez, SeqIO
+from dna_features_viewer import annotate_biopython_record
+from dna_features_viewer import BiopythonTranslator
+
+# Download sequence in NCBI format
+
+Entrez.email = "francisco.ascue@unmsm.edu.pe"
+
+handle = Entrez.efetch( db="nucleotide", id="NC_000884.1", rettype="gb", retmode="text")
+
+record = SeqIO.read(handle, "genbank")
+
+#record.features = [ f for f in record.features if f.type not in ["gene"] ]
+
+# Save records in to variale
+
+SeqIO.write(record, "seq.gb", "genbank")
+
+# Graphics 
+
+graphic_record = BiopythonTranslator().translate_record("seq.gb")
+ax, _ = graphic_record.plot(figure_width=10, strand_in_label_threshold=7)
+
+```
+[]()
 ![](https://bcrf.biochem.wisc.edu/wp-content/uploads/sites/850/2018/12/featured-2.png)
 
 ## R SCRIPTS
 
 ### Instalando Packages
+
 ```r
 install.package("BiocManager")
     
@@ -153,9 +191,9 @@ ggplot(gene, aes(x=V2, y=V1)) +
 ![](https://bioperl.co.uk/wp-content/uploads/2020/06/Bioperl-Logo-2020-600.png)
 
 ## ENTREZ NCBI PERL
+
 ``` bash
 esearch -db $"" -query $"" 
-
 ```
 
 
