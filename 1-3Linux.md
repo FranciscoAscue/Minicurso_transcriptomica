@@ -18,52 +18,54 @@ Los lenguajes de programación tienen un gran cantidad de aplicaciones para bioi
 
 ### Eliminar espacios en blanco
 ``` bash
-    sed '/^$/d' file.txt
+sed '/^$/d' file.txt
 
-    grep . file.txt
+grep . file.txt
 
-    grep "\S" file.txt
+grep "\S" file.txt
 ```
 
 ### Imprimir lineas entre rangos
-
-    awk 'NR>=20&&NR<=80' input.txt
-
+``` bash
+awk 'NR>=20&&NR<=80' input.txt
+```
 
 ### Extraer 10 lineas al azar de un documento
-
-    shuf file.txt | head -n 10
-
+``` bash
+shuf file.txt | head -n 10
+```
 
 ### Separar multifasta
-
-    awk '/^>/{s=++d".fa"} {print > s}' multi.fa
-
+``` bash
+awk '/^>/{s=++d".fa"} {print > s}' multi.fa
+```
 
 ### Separar una secuencia especifica de un fasta
 
+``` bash
+samtools faidx file.fasta
 
-    samtools faidx file.fasta
-
-    samtools faidx "ID_seq" file.fasta > ID_seq.fasta
-
+samtools faidx "ID_seq" file.fasta > ID_seq.fasta
+```
 ### Conteo de secuencias en FastQ
+``` bash
+fgrep -i "@S" file.fq | wc -l
 
-    fgrep -i "@S" file.fq | wc -l
-
-    cat file.fq | echo $((`wc -l`/4))
-
+cat file.fq | echo $((`wc -l`/4))
+```
 ### Nombre de los genes anotados 
+``` bash
+grep $'\tgene\t' sequence.gff3 | perl -ne '/ID=([^;]+)/ and printf("%s\n", $1)'
 
-    grep $'\tgene\t' sequence.gff3 | perl -ne '/ID=([^;]+)/ and printf("%s\n", $1)'
-
-    grep $'\tgene\t' sequence.gff3 | awk '{print $9}' | cut -d';' -f1 | sed "s/ID=//g"
-
+grep $'\tgene\t' sequence.gff3 | awk '{print $9}' | cut -d';' -f1 | sed "s/ID=//g"
+```
 ### Mesclando scripts:
 
-    grep $'\tgene\t' sequence.gff3 | awk '{print $5-$4";"$9}'| sed 's/Name=//g' | awk -F';' '{print $3"\t"$1}' | sort -k2n  > Tamaño_genes.txt
+``` bash
+grep $'\tgene\t' sequence.gff3 | awk '{print $5-$4";"$9}'| sed 's/Name=//g' | awk -F';' '{print $3"\t"$1}' | sort -k2n  > Tamaño_genes.txt
 
-```awk '{print $3}' sequence.gff3 | sort -d | uniq -c```
+awk '{print $3}' sequence.gff3 | sort -d | uniq -c
+```
 
 ![](https://www.claruscode.com/wp-content/uploads/2020/08/python-logo.png)
 
