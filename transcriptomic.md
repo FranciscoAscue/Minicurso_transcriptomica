@@ -1,13 +1,13 @@
 
 ## CONTENIDO
 
-- [DESCARGAR SECUENCIAS](#bash-pipelines)
-- [CONTROL DE CALIDAD](#python-scripts)
-- [FILTRADO DE SECUENCIAS](#r-scripts)
-- [FILTRADO DE rRNA](#entrez-ncbi-perl)
-- [ALINEAMIENTO](#entrez-ncbi-perl)
-- [CONTEO DE SECUENCIAS](#entrez-ncbi-perl)
-- [IMPORTAR A R](#)
+- [DESCARGAR SECUENCIAS](#descargar-secuencias)
+- [CONTROL DE CALIDAD](#control-de-calidad)
+- [FILTRADO DE SECUENCIAS](#filtrado-de-secuencias)
+- [FILTRADO DE rRNA](#filtrado-de-rrna)
+- [ALINEAMIENTO](#alineamiento)
+- [CONTEO DE SECUENCIAS](#conteo-de-secuencias)
+- [IMPORTAR A R](#importar-a-r)
 
 ## DESCARGAR SECUENCIAS
 
