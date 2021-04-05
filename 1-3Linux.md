@@ -1,5 +1,6 @@
 ![](https://www.rti.org/sites/default/files/istock_56013860_molecule_computer_2500.jpg)
-# Introducción a Bioinformática
+Introducción a Bioinformática
+================
 
 ## CONTENIDO
 
