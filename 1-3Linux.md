@@ -276,5 +276,22 @@ TATCAGAGGCACGTCAACATCTTAAAGATGGCACTTGTGGCTTAGTAGAAGTTGAAAAAGGCGTTTTGCC
 TCAACTTGAACAGCCCTATGTGTTCATCAAACGTTCGGATGCTCGAACTGCACCTCATGGTCATGTTATG
 GTTGAGCTGGTAGCAGAACTCGAAGGCATTCAGTACGGTCGTAG ...
 ```
-
+```bash
+esearch -db pubmed -query "Severe acute respiratory syndrome coronavirus2" | elink -related | efetch -format docsum |   xtract -pattern Author -element Name |   sort-uniq-count-rank
+```
+```table
+37      Li Y
+26      Wang Y
+25      Li J
+24      Zhang J
+24      Zhang Y
+20      Wang J
+20      Zhang S
+19      Zhang L
+18      Wang X
+18      Zhang X
+.       .
+.       .
+.       .
+```
 
