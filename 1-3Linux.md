@@ -252,7 +252,29 @@ esearch -db nucleotide -query '("Severe acute respiratory syndrome coronavirus 2
   <Step>1</Step>
 </ENTREZ_DIRECT>
 ```
-
-
+```bash
+esearch -db nucleotide -query '("Severe acute respiratory syndrome coronavirus 2"[Organism] AND (viruses[filter])' -mindate 2020/01/01 -maxdate 2021/03/02 | efilter -country peru
+```
+```xml
+<ENTREZ_DIRECT>
+  <Db>nucleotide</Db>
+  <WebEnv>MCID_606a6fb2fdbe9156e53f0caa</WebEnv>
+  <QueryKey>2</QueryKey>
+  <Count>90</Count>
+  <Step>2</Step>
+</ENTREZ_DIRECT>
+```
+```bash
+esearch -db nucleotide -query '("Severe acute respiratory syndrome coronavirus 2"[Organism] AND (viruses[filter])' -mindate 2021/01/01 -maxdate 2021/03/02 | efilter -country peru | efetch -format fasta
+```
+```fasta
+>MW494424.1 Severe acute respiratory syndrome coronavirus 2 isolate SARS-CoV-2/human/PER/LIM-INS-173/2020, complete genome
+CTCGTCTATCTTCTGCAGGCTGCTTACGGTTTCGTCCGTGTTGCAGCCGATCATCAGCACATCTAGGTTT
+TGTCCGGGTGTGACCGAAAGGTAAGATGGAGAGCCTTGTCCCTGGTTTCAACGAGAAAACACACGTCCAA
+CTCAGTTTGCCTGTTTTACAGGTTCGCGACGTGCTCGTACGTGGCTTTGGAGACTCCGTGGAGGAGGTCT
+TATCAGAGGCACGTCAACATCTTAAAGATGGCACTTGTGGCTTAGTAGAAGTTGAAAAAGGCGTTTTGCC
+TCAACTTGAACAGCCCTATGTGTTCATCAAACGTTCGGATGCTCGAACTGCACCTCATGGTCATGTTATG
+GTTGAGCTGGTAGCAGAACTCGAAGGCATTCAGTACGGTCGTAG ...
+```
 
 
