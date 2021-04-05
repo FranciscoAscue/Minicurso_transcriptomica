@@ -1,4 +1,6 @@
-![](https://i.pinimg.com/originals/87/0e/2b/870e2b603561af91cd073ab6d2679ff8.gif)
+<p align="center">
+    <img src="https://bioinformaticsworkbook.org/assets/images/computer.jpg", width="900">
+</p>
 
 ## CONTENIDO
 
