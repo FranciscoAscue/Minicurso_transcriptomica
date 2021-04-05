@@ -204,15 +204,55 @@ barplot(height = gene$V1, border = FALSE, names.arg = gene$V2,
 ggplot(gene, aes(x=V2, y=V1)) +
   geom_segment( aes(x=V2, xend=V2, y=0, yend=V1)) +
   geom_point( size=5, color="red", fill=alpha("orange", 0.3), alpha=0.7, shape=21, stroke=2) 
-```
-<img src="Images/lolipop.png" width="500">
 
-![](https://bioperl.co.uk/wp-content/uploads/2020/06/Bioperl-Logo-2020-600.png)
+```
+<img align="center" src="Images/lolipop.png" width="500">
+
+<p align="center">
+  <img src="https://bioperl.co.uk/wp-content/uploads/2020/06/Bioperl-Logo-2020-600.png"/>
+</p>
 
 ## ENTREZ NCBI PERL
 
 ``` bash
-esearch -db $"" -query $"" 
+esearch -db nucleotide -query "covid19"
 ```
+```xml
+<ENTREZ_DIRECT>
+  <Db>nucleotide</Db>
+  <WebEnv>MCID_606a64fe45460140b56b5fe4</WebEnv>
+  <QueryKey>1</QueryKey>
+  <Count>139219</Count>
+  <Step>1</Step>
+</ENTREZ_DIRECT>
+```
+```bash
+esearch -db nucleotide -query '("Severe acute respiratory syndrome coronavirus 2"[Organism] AND (viruses[filter])'
+```
+``` xml
+<ENTREZ_DIRECT>
+  <Db>nucleotide</Db>
+  <WebEnv>MCID_606a6ccaa53f343d4860d16b</WebEnv>
+  <QueryKey>1</QueryKey>
+  <Count>130415</Count>
+  <Step>1</Step>
+</ENTREZ_DIRECT>
+```
+
+```bash
+esearch -db nucleotide -query '("Severe acute respiratory syndrome coronavirus 2"[Organism] AND (viruses[filter])' -mindate 2021/01/01 -maxdate 2021/01/02
+```
+
+```xml
+<ENTREZ_DIRECT>
+  <Db>nucleotide</Db>
+  <WebEnv>MCID_606a6f2559c60d0d1e6a4984</WebEnv>
+  <QueryKey>1</QueryKey>
+  <Count>59</Count>
+  <Step>1</Step>
+</ENTREZ_DIRECT>
+```
+
+
 
 
