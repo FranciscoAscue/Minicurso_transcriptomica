@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://bioinformaticsworkbook.org/assets/images/computer.jpg", width="900">
+    <img src="https://www.umassmed.edu/globalassets/informatics/images/slideshow-home/informatics_home.jpg?format=jpeg&quality=80">
 </p>
 
 ## CONTENIDO
