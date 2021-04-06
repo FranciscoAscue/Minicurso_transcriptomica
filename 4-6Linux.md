@@ -163,23 +163,51 @@ htop
 
 ###COMENTARIOS
 
-###VARIABLES
+###VARIABLES (numericos (enteros o flotantes), strings (""), booleanos (T / F)
 
 VAR1=""
 VAR2=""
 VAR3=""
 
-###EXECUTION
+###EXECUTION ( se puede ejecutar comandos que se usan en la terminal )
 
-echo "started at ´date´"
-echo "mkdir -p ${OD}"
+echo "started at ´date´" ## ´date´ (permite ejecutar comandos dentro de un print
 
-mkdir -p ${IDX}
+mkdir -p ${VAR} ## puede intercambiar variables para usarlos dentro de los comandos.
 
-echo "bowtie2-build -threads 30 ${REF} ${IDX}/cavpor3"
-bowtie2-build -threads 30 ${REF} ${IDX}/cavpor3
 
-echo "Finished at ´date´"
+### sintaxis de comparacion
+
+== is equal to ; if [ "$a" == "$b" ]
+
+!= is not equal to ; if [ "$a" != "$b" ]
+
+< is less than; if [[ "$a" < "$b" ]] 
+
+< is greater than if [[ "$a" > "$b" ]]
+
+AND (&&) y OR(||)
+
+### estructura basica de una condicional if 
+
+if [ "$i" != "UGA" ]; then
+        echo "$i phe"
+fi
+
+### estructura basica de un while
+
+while [ number -gt 4 ]; do
+       echo "loop1"
+       echo "loop2"
+       echo "loop3"
+done
+
+### estrucutura basica de un for
+
+for i in a b c
+do
+        comand <options> target
+done
 ```
 
 Introducción a datos NGS
