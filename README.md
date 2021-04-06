@@ -34,13 +34,13 @@
 
 | Horario  |  Presentador  |  Actividad | Programas a utilizar |
 |:----------:|:-------------:|:-----------:|:---------------------:|
-|10:00 am-10:30 am |Francisco Ascue|Introducción|-|
-|10:30 am - 11:00 am |Francisco Ascue| Entorno Linux (¿ Por qué usar Linux ?), Comandos prácticos|bash, awk <br />  [ver manual](1-3Linux.md)|
-|11:00 am - 12:00 pm|Francisco Ascue|Programas y lenguajes para Bioinformática|biopython, bioconductor, bioperl. <br /> [ver manual](1-3Linux.md)|
-|12:00 pm - 1:30 pm|-|Receso|-|
-|1:30 pm - 2:30 pm|Francisco Ascue|Pipelines y Scripts para Bioinformática|bash script <br /> [ver manual](4-6Linux.md)|
-|2:30 pm - 3:30 pm|Francisco Ascue|Archivos y formatos para datos de NGS|[FastQ](Images/FastQ.jpg),[SAM](Images/SAM.jpg), [GFF3](Images/gff3.jpg), [GTF](Images/gtf.jpg), [VCF](Images/vcf.png)|
-|3:30 pm - 5:00 pm|Francisco Ascue|Procesamiento de datos de NGS|fastqc, trimmomatic, bowtie2, spades <br /> [ver manual](NGSLinux.md)|
+|1:30 pm-2:00 pm |Francisco Ascue|Introducción|-|
+|2 pm - 2:30 pm |Francisco Ascue| Entorno Linux (¿ Por qué usar Linux ?), Comandos prácticos|bash, awk <br />  [ver manual](1-3Linux.md)|
+|2:30 pm - 3:30 pm|Francisco Ascue|Programas y lenguajes para Bioinformática|biopython, bioconductor, bioperl. <br /> [ver manual](1-3Linux.md)|
+|3:30 pm - 4:00 pm|-|Receso|-|
+|4:00 pm - 5:00 pm|Francisco Ascue|Pipelines y Scripts para Bioinformática|bash script <br /> [ver manual](4-6Linux.md)|
+|5:00 pm - 6:00 pm|Francisco Ascue|Archivos y formatos para datos de NGS|[FastQ](Images/FastQ.jpg),[SAM](Images/SAM.jpg), [GFF3](Images/gff3.jpg), [GTF](Images/gtf.jpg), [VCF](Images/vcf.png)|
+|6:00 pm - 7:30 pm|Francisco Ascue|Procesamiento de datos de NGS|fastqc, trimmomatic, bowtie2, spades <br /> [ver manual](NGSLinux.md)|
 
 **Introducción a Transcriptomica**
 
