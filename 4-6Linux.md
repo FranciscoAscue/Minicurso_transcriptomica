@@ -2,15 +2,18 @@
     <img src="https://www.umassmed.edu/globalassets/informatics/images/slideshow-home/informatics_home.jpg?format=jpeg&quality=80">
 </p>
 
-Pipelines y Scripts para Bioinformática
-=======================================
+BASH SCRIPT PARA DATOS NGS
+==================
 
 ## CONTENIDO
 
 - [BASH PIPELINES](#bash-pipelines)
 - [BASH SCRIPTS](#bash-scripts)
 - [SYNTAXIS](#syntaxis)
-- [SCRIPTS PARA BIOINFORMATICA](#scripts-para-bioinformatica)
+- [ARCHIVOS PARA DATOS NGS](#archivos-para-datos-ngs)
+
+Pipelines y Scripts para Bioinformática
+=======================================
 
 ## BASH PIPELINES
 
@@ -179,7 +182,22 @@ bowtie2-build -threads 30 ${REF} ${IDX}/cavpor3
 echo "Finished at ´date´"
 ```
 
-## SCRIPTS PARA BIOINFORMATICA
+Introducción a datos NGS
+=========================
 
+![](https://www.researchgate.net/profile/William-Laframboise/publication/295684512/figure/fig3/AS:667670861070354@1536196546922/General-schema-for-bioinformatics-workflow-for-next-generation-sequencing-NGS-testing.ppm)
 
+## ARCHIVOS PARA DATOS NGS
 
+### Formatos 
+
+<p align="center" width="100%">
+    <img width="45%" src="Images/FastQ.jpg"> 
+    <img width="50%" src="Images/SAM.jpg"> 
+</p>
+
+<p align="center" width="100%">
+    <img width="100%" src="Images/gtf.jpg"> 
+    <img width="70%" src="Images/gff3.jpg"> 
+    <img width="70%" src="Images/vcf.png">
+</p>
