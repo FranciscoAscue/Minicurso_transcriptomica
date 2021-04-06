@@ -189,9 +189,7 @@ Introducción a datos NGS
 
 ## ARCHIVOS PARA DATOS NGS
 
-### Formatos 
-
-## FASTQ y SAM (Sequence Alignment Map)
+### FASTQ y SAM (Sequence Alignment Map)
 
 <p align="center" width="100%">
     <img width="45%" src="Images/FastQ.jpg"> 
@@ -199,7 +197,7 @@ Introducción a datos NGS
 </p>
 
 
-## FORMATOS DE ANOTACION(GFF(general feactures format), GTF(gene transfer format), VCF)
+### FORMATOS DE ANOTACION(GFF(general feactures format), GTF(gene transfer format), VCF)
 
 
 <p align="center" width="100%">
