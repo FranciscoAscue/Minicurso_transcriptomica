@@ -41,6 +41,145 @@ awk '{print $3}' sequence.gff3 | sort -d | uniq -c
 
 ## BASH SCRIPTS
 
+***she bang***
+
+```bash
+#!interpreter [optional-arg]
+
+#!/bin/sh
+#!/bin/bash
+#!/usr/bin/python3
+#!/usr/bin/awk -f
+```
+
+```bash
+#!/bin/bash
+
+##CONSTANTES
+
+VAR1="UAG"
+VAR2="UAA"
+
+##EJECUCION
+## && (y) || (o)
+
+for i in {A,U,G,C}{A,U,G,C}{A,U,G,C}
+do
+        if [ "$i" != "UGA" ] || [ "$i" != "$VAR2" ]; then
+                echo "$i phe"
+        fi
+done
+
+```
+### Permisos
+
+``` bash 
+
+# cambia permisos a archivos y carpetas
+
+# d rwx rwx rwx / (propietario) (grupos) (demas)
+# r 4
+# w 2		
+# x 1 
+
+chmod 775 ACGT.bash
+
+chmod +rwx ACGT.bash
+
+# R recursivo 
+
+chmod -R 755 
+
+``` 
+
+### Correr un script
+
+```bash
+<lenguaje> script.ext
+
+### Sin permisos
+
+bash ACGT.bash
+
+### Con permisos
+
+./ACGT.bash 
+
+### Segundo plano
+
+./ACGT.bash&
+
+```
+
+### Correr en segundo plano o screen
+
+```bash
+
+# Añadir el caracter &
+bash scrip.bash&
+
+### Activando un screen
+
+screen -S name
+
+./ACGT.bash
+
+## salir del screen CTRL A + D
+
+## ingresar al screen nuevamente
+
+scren -ls 
+
+screen -r name  
+```
+
+### Detener procesos
+
+```bash
+
+# muestrar los procesos actuales
+
+ps 
+pstree
+top -u user
+
+#detener procesos por comando
+kill PID
+
+top -u user 
+# presiona "k" y indica el PID 
+
+htop 
+# buscar el proceso y presionar "k" 
+```
+
 ## SYNTAXIS
-   
+
+```bash
+#!/bin/bash
+
+###COMENTARIOS
+
+###VARIABLES
+
+VAR1=""
+VAR2=""
+VAR3=""
+
+###EXECUTION
+
+echo "started at ´date´"
+echo "mkdir -p ${OD}"
+
+mkdir -p ${IDX}
+
+echo "bowtie2-build -threads 30 ${REF} ${IDX}/cavpor3"
+bowtie2-build -threads 30 ${REF} ${IDX}/cavpor3
+
+echo "Finished at ´date´"
+```
+
 ## SCRIPTS PARA BIOINFORMATICA
+
+
+
