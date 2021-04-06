@@ -180,7 +180,7 @@ for i in SA42911 SA42912 SA42913 SA42914 SA42976 SA42977 SA42978 SA42979 SA42980
 echo "Finished at `date`"
 ```
 
-## VALIDAD DE ENSAMBLAJE
+## VALIDACION DE ENSAMBLAJE
 
 ```bash
 quast.py -r refseq.fasta -e -o outputdir fasta_assemblyScaffold.fa
