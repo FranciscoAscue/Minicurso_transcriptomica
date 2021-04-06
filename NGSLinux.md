@@ -72,6 +72,14 @@ MINLEN:<length>
 
 ## ALINEAMIENTO
 
+![](https://www.researchgate.net/publication/334902338/figure/fig1/AS:941106548183066@1601388694174/Graph-representation-with-its-tabular-form-and-HISAT2-indexes-and-alignment-output-a.png)
+
+<p align="center" width="100%">
+    <img width="40%" src="https://lh3.googleusercontent.com/proxy/0d_bR1LQIE1jtGz787AbvVg5qch5GUM4qhcKyiY9lpdyFB5uQCNNM2Vh4nzv9M3Csalr8cFAfN2K_2hUcsKRyn0">
+    <img width="50%" src="https://i.ytimg.com/vi/6BJbEWyO_N0/maxresdefault.jpg">
+    <img width="90%" src="https://gtpb.github.io/ADER18F/pages/images/L05/NGSalignmentworkflow.jpg"
+</p>
+
 ### Preparacion del index 
 
 ```bash
@@ -132,6 +140,34 @@ echo "Finished at `date`"
 ## ENSAMBLAJE
 ```bash
 spades.py -1 file_1.fq -2 file_2.fq -s file.single.fq -m 2 -k 31,41,51 -o outputDir
+```
+```bash
+#!/bin/bash
+
+### CONSTANTS
+READS="${MNTD3}/data/reads"
+RES="${MNTD3}/results/maps"
+OD="${RES}/assembly"
+
+WD="~/Curso_transcriptomica/SARS"
+REF="${WD}/data/reference/NC_000.fasta"
+RES="${WD}/results"
+READS="${WD}/data/reads/"
+r1="${READS}/sars2_1.fq"
+r2="${READS}/sars2_2.fq"
+OD="${RES}/map"
+### EXECUTION
+
+echo "Started at `date`"
+
+for i in SA42911 SA42912 SA42913 SA42914 SA42976 SA42977 SA42978 SA42979 SA42980 SA42981
+       do
+               mkdir -p ${OD}/$i/spades
+               echo "spades.py -1 ${RES}/${i}map/mito${i}_1.fq -2 ${RES}/${i}map/mito${i}_2.fq -m 4 -t 4 -k 41,51,61 -o ${OD}/${i}/spades"
+               spades.py -1 ${RES}/${i}map/mito${i}_1.fq -2 ${RES}/${i}map/mito${i}_2.fq -m 4 -t 4 -k 41,51,61 -o ${OD}/${i}/spades
+       done
+
+echo "Finished at `date`"
 ```
 
 ## VALIDAD DE ENSAMBLAJE
