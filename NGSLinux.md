@@ -138,6 +138,16 @@ echo "Finished at `date`"
 ```
 
 ## ENSAMBLAJE
+
+<p align="center" width="100%">
+    <img width="60%" src="https://pbs.twimg.com/media/Eht2bwoWoAAW8O5.jpg">
+    <img>
+    <img>
+    <img>
+    <img width="70%" src="https://genome.cshlp.org/content/20/9/1165/F2.large.jpg">
+    <img width="60%" src="https://www.pnas.org/content/pnas/113/52/E8396/F4.large.jpg">
+</p>
+
 ```bash
 spades.py -1 file_1.fq -2 file_2.fq -s file.single.fq -m 2 -k 31,41,51 -o outputDir
 ```
