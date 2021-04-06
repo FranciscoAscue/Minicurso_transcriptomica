@@ -49,25 +49,6 @@ samtools faidx file.fasta
 
 samtools faidx "ID_seq" file.fasta > ID_seq.fasta
 ```
-### Conteo de secuencias en FastQ
-``` bash
-fgrep -i "@S" file.fq | wc -l
-
-cat file.fq | echo $((`wc -l`/4))
-```
-### Nombre de los genes anotados 
-``` bash
-grep $'\tgene\t' sequence.gff3 | perl -ne '/ID=([^;]+)/ and printf("%s\n", $1)'
-
-grep $'\tgene\t' sequence.gff3 | awk '{print $9}' | cut -d';' -f1 | sed "s/ID=//g"
-```
-### Mesclando scripts:
-
-``` bash
-grep $'\tgene\t' sequence.gff3 | awk '{print $5-$4";"$9}'| sed 's/Name=//g' | awk -F';' '{print $3"\t"$1}' | sort -k2n  > Tamaño_genes.txt
-
-awk '{print $3}' sequence.gff3 | sort -d | uniq -c
-```
 
 ![](https://www.claruscode.com/wp-content/uploads/2020/08/python-logo.png)
 
