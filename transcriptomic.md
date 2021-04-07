@@ -1,4 +1,4 @@
-Differential Gene Expression using RNA-Seq (Workflow)
+Analisis de datos RNA-Seq
 ================
 
 ### Introducción
@@ -40,6 +40,7 @@ bash preinstall.sh
   │  
   │   └── scripts/                   <- Scripts usados con el curso
 ```
+#1351
 
 ## CONTENIDO
 
@@ -53,15 +54,43 @@ bash preinstall.sh
 
 ## DESCARGAR SECUENCIAS
 
+```bash
+### Sra-tool kit
+
+prefetch -O ~/Curso_transcriptomica/RNA_seq/reads SR
+
+prefetch.2 -a 'ascp|/PATH_to_aspera/.aspera/connect/etc/asperaweb_id_dsa.openssh' -X 100G -O SRX4501347 SRX4501347
+
+fasterq-dump SR.sra -S -m 1G -O ~/Curso_transcriptomica/RNA_seq/reads -e 2
+
+```
+
 ## CONTROL DE CALIDAD
+
+fastqc -t 40 cavtsc_forward_paired.fq.gz cavtsc_reverse_paired.fq.gz -o /mnt/disco2/fascue/cporcellus/results/fastqc/
+fastqc -t 40 cavtsc_forward_unpaired.fq.gz cavtsc_revers_unpaired.fq.gz -o /mnt/disco2/fascue/cporcellus/results/fastqc/
+
+multiqc .
+
+
     
 ## FILTRADO DE SECUENCIAS
 
+trim_galore 
+
 ## FILTRADO DE rRNA
+
+sortmerna
 
 ## ALINEAMIENTO
 
+STAR
+
 ## CONTEO DE SECUENCIAS
 
+feacturecounts
+
 ## IMPORTAR A R
+
+
 
