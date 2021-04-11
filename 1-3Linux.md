@@ -32,10 +32,6 @@ grep "\S" file.txt
 awk 'NR>=20&&NR<=80' input.txt
 ```
 
-### Extraer 10 lineas al azar de un documento
-``` bash
-shuf file.txt | head -n 10
-```
 ### Convertir fastq a fasta
 ``` bash
 seqtk seq -a fastq_file.fq > fasta_file.fa
