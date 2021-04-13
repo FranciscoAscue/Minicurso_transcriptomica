@@ -46,7 +46,7 @@ awk '/^>/{s=++d".fa"} {print > s}' multi.fa
 ``` bash
 samtools faidx file.fasta
 
-samtools faidx "ID_seq" file.fasta > ID_seq.fasta
+samtools faidx file.fasta "ID_seq" > ID_seq.fasta
 ```
 
 ![](https://www.claruscode.com/wp-content/uploads/2020/08/python-logo.png)
