@@ -189,9 +189,6 @@ ggplot(gene, aes(x=V2, y=V1)) +
 ```
 <img align="center" src="Images/lolipop.png" width="500">
 
-<p align="center">
-  <img src="https://bioperl.co.uk/wp-content/uploads/2020/06/Bioperl-Logo-2020-600.png"/>
-</p>
 
 ## ENTREZ NCBI PERL
 
