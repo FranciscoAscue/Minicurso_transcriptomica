@@ -48,7 +48,7 @@ Minicurso de Análisis del Transcriptoma Usando Linux
 
 | Horario  |  Presentador  |  Actividad | Programas a utilizar |
 |:----------:|:-------------:|:-----------:|:---------------------:|
-|09:00 am-9:30 am |Carlo Gustavo Mormontoy|Presentación e introducción al curso.|-|
+|09:00 am-9:30 am |Carlo Gustavo Mormontoy|Introducción al Transcriptomica.|-|
 |9:30 am - 10:00 am |-|Revisión de programas y soporte de instalación|-|
 |10:00 am - 12:00 pm|Francisco Ascue|Bloque I: Análisis de secuencias: mapeo, recuento y ensamblaje.|STAR, featureCounts, SortMeRNA, Samtools <br />  [ver manual](transcriptomic.md)|
 |12:00 pm - 1:30 pm|-|Almuerzo|-|
