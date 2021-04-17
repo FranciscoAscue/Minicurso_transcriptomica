@@ -76,5 +76,3 @@ Blast2GO: https://www.blast2go.com/ (Free Trial)
 Cytoscape: https://cytoscape.org/     
 BiNGO: https://www.psb.ugent.be/cbd/papers/BiNGO/Home.html   
 
-
-![](Images/descarga.jpeg)
