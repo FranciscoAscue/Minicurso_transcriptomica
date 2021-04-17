@@ -1,3 +1,5 @@
+[Pagian anterior <<](NGSLinux.md)  [Menu Curso](README.md#cronograma-de-actividades)
+
 Analisis de datos RNA-Seq
 ================
 
@@ -343,4 +345,4 @@ mcols(results, use.names = T)
 
 
 
-[Pagian anterior <<](NGSLinux.md)  [Menu Curso](README.md)
+[Pagian anterior <<](NGSLinux.md)  [Menu Curso](README.md#cronograma-de-actividades)
