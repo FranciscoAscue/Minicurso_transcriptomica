@@ -60,17 +60,16 @@ awk '{print $3}' sequence.gff3 | sort -d | uniq -c
 
 ##CONSTANTES
 
-VAR1="UAG"
-VAR2="UAA"
+VAR1="UUU"
+VAR2="UUC"
 
 ##EJECUCION
-## && (y) || (o)
 
 for i in {A,U,G,C}{A,U,G,C}{A,U,G,C}
 do
-        if [ "$i" != "UGA" ] || [ "$i" != "$VAR2" ]; then
-                echo "$i phe"
-        fi
+  if [ "$i" = "$VAR1" ] || [ "$i" = "$VAR2" ]; then
+    echo "$i Phe"
+  fi
 done
 
 ```
