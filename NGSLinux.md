@@ -188,4 +188,4 @@ quast.py -r refseq.fasta -e -o outputdir fasta_assemblyScaffold.fa
 
 
 
-[Pagian anterior <<](4-6Linux.md)  [Menu Curso](README.md)  [>>Siguiente Pagina](trasncriptomic.md)
+[Pagian anterior <<](4-6Linux.md)  [Menu Curso](README.md)  [>>Siguiente Pagina](transcriptomic.md)
