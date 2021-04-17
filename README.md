@@ -67,7 +67,7 @@ bash preinstallUbuntu18.sh
 |5:00 pm - 6:00 pm|Francisco Ascue|Archivos y formatos para datos de NGS|[FastQ](Images/FastQ.jpg),[SAM](Images/SAM.jpg), [GFF3](Images/gff3.jpg), [GTF](Images/gtf.jpg), [VCF](Images/vcf.png)|
 |6:00 pm - 7:30 pm|Francisco Ascue|Procesamiento de datos de NGS|fastqc, trimmomatic, bowtie2, spades <br /> [ver manual](NGSLinux.md)|
 
-**Introducción a Transcriptomica**
+**RNA-seq para el Análisis de transcriptomico**
 
 | Horario  |  Presentador  |  Actividad | Programas a utilizar |
 |:----------:|:-------------:|:-----------:|:---------------------:|
