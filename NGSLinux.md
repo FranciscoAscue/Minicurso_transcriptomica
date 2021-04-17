@@ -1,3 +1,5 @@
+[Pagian anterior <<](4-6Linux.md)  [Menu Curso](README.md#cronograma-de-actividades)  [>>Siguiente Pagina](transcriptomic.md)
+
 <p align="center" width="100%">
     <img src="https://www.researchgate.net/profile/Victoria-Dominguez-Del-Angel/publication/322946559/figure/fig2/AS:590843312361473@1517879431449/General-steps-in-a-genome-assembly-workflow-Input-and-output-data-are-indicated-for-each.png">
 </p>
