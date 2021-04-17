@@ -11,8 +11,7 @@ Minicurso de Análisis del Transcriptoma Usando Linux
 
 `bash preinstall.sh`
 
-
-![](Images/descarga2.jpg)
+<img align="right" width="15%" src="Images/descarga2.jpg">
 
 ## Objetivo
 
