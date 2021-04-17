@@ -273,4 +273,4 @@ esearch -db pubmed -query "Severe acute respiratory syndrome coronavirus2" | eli
 .       .
 ```
 
-[Siguiente Pagina](4-6Linux.md)
+[Menu Curso](README.md) [Siguiente Pagina](4-6Linux.md)
