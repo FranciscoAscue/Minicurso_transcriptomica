@@ -1,4 +1,6 @@
-Minicurso de Análisis del Transcriptoma Usando Linux ![](http://hamutay.org/wp-content/themes/rt_protean/custom/images/HAMUTAY%20LOGO%20VERTICAL.jpg)
+<img align="right" width="15%" src="http://hamutay.org/wp-content/themes/rt_protean/custom/images/HAMUTAY%20LOGO%20VERTICAL.jpg">
+
+Minicurso de Análisis del Transcriptoma Usando Linux 
 =========
 
 ## Descargar repositorio
