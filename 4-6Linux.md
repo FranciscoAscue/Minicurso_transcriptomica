@@ -246,4 +246,4 @@ Introducción a datos NGS
 </p>
 
 
-[Pagian anterior <<](1-3Linux.md)  [Menu Curso](README.md) [>>Siguiente Pagina](NGSLinux.md)
+[Pagian anterior <<](1-3Linux.md)  [Menu Curso](README.md#cronograma-de-actividades) [>>Siguiente Pagina](NGSLinux.md)
