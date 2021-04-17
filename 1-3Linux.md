@@ -273,4 +273,4 @@ esearch -db pubmed -query "Severe acute respiratory syndrome coronavirus2" | eli
 .       .
 ```
 
-[Menu Curso](README.md##Cronograma-de-actividades) [>>Siguiente Pagina](4-6Linux.md)
+[Menu Curso](README.md#cronograma-de-actividades) [>>Siguiente Pagina](4-6Linux.md)
