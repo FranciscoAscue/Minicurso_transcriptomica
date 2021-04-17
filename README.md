@@ -6,13 +6,13 @@ Minicurso de Análisis del Transcriptoma Usando Linux
 Este repositorio contiene los scripts y archivos que se utilizaran durante el curso. 
 
 ## Descargar repositorio
-Instalar previamente git (si no lo tiene instalado), copie el repositorio en la direción `$HOME`
+Instale previamente `git` (si no lo tiene instalado), clone el repositorio en la direción `$HOME`
 ```bash
 git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git`   
 ```
 ### Instalar programas
 
-Para la instalacion de programas ejecutar el siguiente comando:
+Para la instalacion de programas ejecutar los sripts según sea el caso:
 
 >**Ubuntu 20.04 LTS**
 
@@ -48,11 +48,9 @@ bash preinstallUbuntu18.sh
 ## Requisitos
 
 - Estudiantes de tercer año en adelante o posgrado.
-- Deseable que participen en un proyecto con la temática y tengan sus propios datos.
 - PC con sistema operativo Linux (Ubuntu u otro con arquitectura debían) o Windows 10 (<a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">configurar Windows subsystem for Linux</a>). 
 - Memoria interna libre: 50 Gb, RAM: min. 4 Gb. Procesador: Core i5 o equivalente.
 - Manejo de línea comandos en Linux y conocimientos en R.
-- Instalar la lista de programas a ser utilizados.
 
 
 ## Cronograma de actividades
@@ -84,7 +82,6 @@ bash preinstallUbuntu18.sh
 ## Sofwares y pacquetes
 
 Samtools: https://github.com/samtools/samtools    
-Stringtie: https://github.com/gpertea/stringtie    
 featureCounts: https://pubmed.ncbi.nlm.nih.gov/24227677/    
 SortMeRNA: https://bioinfo.lifl.fr/RNA/sortmerna/     
 STAR: https://github.com/alexdobin/STAR     
