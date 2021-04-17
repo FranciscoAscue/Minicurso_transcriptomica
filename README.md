@@ -28,7 +28,9 @@ bash preinstall.sh
 bash preinstallUbuntu18.sh
 ```
 
-Si cuenta con una virtual box con sistema operativo Linux (Sea Ubuntu 18.04 o 20.04 LTS) puede aplicar los comandos segun su versión. Aunque es recomendable que instale el **Windonws Subsystem Linux**,ya que consume menor memoria RAM.
+>**Virtual Box (Ubuntu)**   
+
+```Si cuenta con una virtual box con sistema operativo Linux (Sea Ubuntu 18.04 o 20.04 LTS) puede aplicar los comandos segun su versión. Aunque es recomendable que  instale **Windonws Subsystem Linux**, ya que consume menos memoria RAM.```
 
 |                                               |                                               |                                               |
 |-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
