@@ -1,3 +1,5 @@
+[Menu Curso](README.md#cronograma-de-actividades) [>>Siguiente Pagina](4-6Linux.md)
+
 ![](https://www.rti.org/sites/default/files/istock_56013860_molecule_computer_2500.jpg)
 Introducción a Bioinformática
 ================
