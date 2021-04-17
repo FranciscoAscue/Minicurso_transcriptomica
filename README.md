@@ -18,12 +18,15 @@ Para la instalacion de programas ejecutar el siguiente comando:
 
 >***En caso de contar con WSL (Windonws Subsystem Linux), descargar Ubuntu 20.04 LTS***
 
->`bash preinstall.sh`
+```bash
+bash preinstall.sh`
+```
 
 >**Ubuntu 18.04 LTS**
 
->`bash preinstallUbuntu18.sh`
-
+```bash 
+bash preinstallUbuntu18.sh`
+```
 |                                               |                                               |                                               |
 |-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
 | <img width="100%" src="Images/descarga.jpeg"> | <img width="100%" src="Images/descarga2.jpg"> | <img width="100%" src="Images/descarga3.jpg"> |
