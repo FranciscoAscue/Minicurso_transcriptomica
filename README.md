@@ -1,3 +1,6 @@
+Minicurso de Análisis del Transcriptoma Usando Linux ![](http://hamutay.org/wp-content/themes/rt_protean/custom/images/HAMUTAY%20LOGO%20VERTICAL.jpg)
+=========
+
 ## Descargar repositorio
 
 `git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git`   
