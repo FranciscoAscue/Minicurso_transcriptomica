@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 ## pip install --upgrade pip  
 # pip install cython
 # pip install pysam (ubuntu)
@@ -13,7 +15,7 @@ info = Entrez.einfo()
 data = info.read()
 
 record = Entrez.read(info)
-data
+
 
 handle = Entrez.efetch(db="nucleotide",id="NC_045512.2",rettype="fasta", retmode="text")
 
