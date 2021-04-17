@@ -16,12 +16,6 @@ Minicurso de Análisis del Transcriptoma Usando Linux
 | <img width="100%" src="Images/descarga.jpeg"> | <img width="100%" src="Images/descarga2.jpg"> | <img width="100%" src="Images/descarga3.jpg"> |
 | <img width="100%" src="Images/descarga4.jpg"> | <img width="100%" src="Images/descarga5.jpg"> | <img width="100%" src="Images/descarga6.jpg"> |
 
-
-## Objetivo
-
-<p style="text-align: justify">Adiestrar al participante en métodos del análisis transcriptómico (por referencia), incluyendo el mapeo, recuento de secuencias, normalización y análisis de expresión diferencial.</p>
-
-
 ## Numero de participantes
 
 12 Personas
