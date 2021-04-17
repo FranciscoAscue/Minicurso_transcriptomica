@@ -1,3 +1,5 @@
+[Pagian anterior <<](1-3Linux.md)  [Menu Curso](README.md#cronograma-de-actividades) [>>Siguiente Pagina](NGSLinux.md)
+
 <p align="center">
     <img src="https://www.umassmed.edu/globalassets/informatics/images/slideshow-home/informatics_home.jpg?format=jpeg&quality=80">
 </p>
