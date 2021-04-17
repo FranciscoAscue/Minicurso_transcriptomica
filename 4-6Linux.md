@@ -188,6 +188,18 @@ mkdir -p ${VAR} ## puede intercambiar variables para usarlos dentro de los coman
 
 AND (&&) y OR(||)
 
+-eq is equal to if [ "$a" -eq "$b" ]
+
+-ne is no equal to if [ "$a" -ne "$b" ]
+
+-gt is greater then if [ "$a" -gt "$b" ]
+
+-ge is greater then or egual to if [ "$a" -ge "$b" ]
+
+-lt is less than if [ "$a" -lt "$b" ]
+
+-le is less than or equal to if [ "$a" -le "$b" ]
+
 ### estructura basica de una condicional if 
 
 if [ "$i" != "UGA" ]; then
