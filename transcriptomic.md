@@ -340,3 +340,7 @@ mcols(results, use.names = T)
     ## stat                results         Wald statistic: Group LoGlu vs HiGlu
     ## pvalue              results      Wald test p-value: Group LoGlu vs HiGlu
     ## padj                results                        fdr adjusted p-
+
+
+
+[Pagian anterior <<](NGSLinux.md)  [Menu Curso](README.md)
