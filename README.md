@@ -12,6 +12,7 @@ git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git`
 ```
 ### Instalar programas
 
+Para la instalación de programas correr el script 
 
 *En caso de contar con WSL (Windonws Subsystem Linux), descargar Ubuntu 20.04 LTS*
 `bash preinstall.sh`
