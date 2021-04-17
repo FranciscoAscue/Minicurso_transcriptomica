@@ -3,12 +3,17 @@
 Minicurso de Análisis del Transcriptoma Usando Linux 
 =========
 
+Este repositorio contiene los scripts y archivos que se utilizaran durante el curso. 
+
 ## Descargar repositorio
-
-`git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git`   
-
+Instalar previamente git (si no lo tiene instalado), copie el repositorio en la direción `$HOME`
+```bash
+git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git`   
+```
 ### Instalar programas
 
+
+*En caso de contar con WSL (Windonws Subsystem Linux), descargar Ubuntu 20.04 LTS*
 `bash preinstall.sh`
 
 |                                               |                                               |                                               |
