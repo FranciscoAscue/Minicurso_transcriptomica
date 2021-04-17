@@ -14,15 +14,15 @@ git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git`
 
 Para la instalacion de programas ejecutar el siguiente comando:
 
-Ubuntu 20.04 LTS
+>**Ubuntu 20.04 LTS**
 
-***En caso de contar con WSL (Windonws Subsystem Linux), descargar Ubuntu 20.04 LTS***
+>***En caso de contar con WSL (Windonws Subsystem Linux), descargar Ubuntu 20.04 LTS***
 
-`bash preinstall.sh`
+>`bash preinstall.sh`
 
-Ubuntu 18.04 LTS
+>**Ubuntu 18.04 LTS**
 
-`bash preinstallUbuntu18.sh`
+>`bash preinstallUbuntu18.sh`
 
 |                                               |                                               |                                               |
 |-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
