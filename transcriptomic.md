@@ -171,7 +171,7 @@ multiqc .
     -v
 
     # Move logs into the correct folder
-    mv -v results/3_rRNA/aligned//sample_aligned.log results/3_rRNA/logs
+    mv -v results/
 
 ```
 
@@ -209,7 +209,7 @@ multiqc .
 #### Output
 
 ``` bash
-── results/4_aligned_sequences/
+── results/map/
     └── aligned_bam/sampleAligned.sortedByCoord.out.bam   <- Sorted BAM alignment fole
     └── aligned_logs/sampleLog.final.out                  <- Log of STAR alignment rate
     └── aligned_logs/sampleLog.out                        <- Log of steps take during STAR alignment
@@ -241,7 +241,7 @@ multiqc .
 #### Output
 
 ``` bash
-── results/5_final_counts/
+── results/counts/
     └── final_counts.txt                <- Final gene counts across all samples
     └── final_counts.txt.summary        <- Summary of gene summarization 
 
