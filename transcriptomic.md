@@ -85,20 +85,20 @@ wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download
 
 |SAMPLE| FILEID | FILENAME |   
 |:----------:|:-------------:|:-----------:|
-|SRR849504| 1p6jTh3JYK3mCmusOj3dj_fRLc2G4v5-s |	NC_000021.9_1.fq |
-|| 1R9R9d9vETQNuOwKOqXUQfkIufmrBXWef |  NC_000021.9_2.fq |
-|SRR849505| 1dGt-SSyze4yuNqtN9MPXGIeBj42I3YFf |	 NC_000021.9_1.fq |
-|| 18eSbO-rEWt9iv22vlPlb8YaisudC8UIq |  NC_000021.9_2.fq |
-|SRR849506|	1FGk-0jAOMk2msL6buFAnMhYgpXve4Z8t |  NC_000021.9_1.fq |
-|| 18vp7LD-makAdcrpyaoqNOp6D1J6dvtEr |  NC_000021.9_2.fq |
-|SRR849507|	1WceQz3qDvlFAhBQMt4YJPSCguUYNcaJr |  NC_000021.9_1.fq |
-|| 1CGjXGrTS6iIJ2e_Y2bcvfBI60FenlAB7 |  NC_000021.9_2.fq |
-|SRR849508|	1HZBUwCGjuYFjyHkavdzkh6rQ1W3EFA9l |  NC_000021.9_1.fq |
-|| 1pTT17NMb2UYs1ZRS96a2z8nXyDEz2_tR |  NC_000021.9_2.fq |
-|SRR849509| 1_1s_6A-sRxhcWgIUTMU3PiCgp6gbEC17	|  NC_000021.9_1.fq |
-|| 1ZetrrsOnbHlGLD43RwwJjBSBVP35ABy- |  NC_000021.9_2.fq |
-|SRR849510|	1XC8kvuDazTsf5_GDLGoE-c4WrRfZyagw |  NC_000021.9_1.fq |
-|| 1Hb9PfckXKXT_pegNF_AOA3SVa4oh6zRA |  NC_000021.9_2.fq |
+|SRR849504| `1p6jTh3JYK3mCmusOj3dj_fRLc2G4v5-s` |	NC_000021.9_1.fq |
+|| `1R9R9d9vETQNuOwKOqXUQfkIufmrBXWef` |  NC_000021.9_2.fq |
+|SRR849505| `1dGt-SSyze4yuNqtN9MPXGIeBj42I3YFf` |	 NC_000021.9_1.fq |
+|| `18eSbO-rEWt9iv22vlPlb8YaisudC8UIq` |  NC_000021.9_2.fq |
+|SRR849506|	`1FGk-0jAOMk2msL6buFAnMhYgpXve4Z8t` |  NC_000021.9_1.fq |
+|| `18vp7LD-makAdcrpyaoqNOp6D1J6dvtEr` |  NC_000021.9_2.fq |
+|SRR849507|	`1WceQz3qDvlFAhBQMt4YJPSCguUYNcaJr` |  NC_000021.9_1.fq |
+|| `1CGjXGrTS6iIJ2e_Y2bcvfBI60FenlAB7` |  NC_000021.9_2.fq |
+|SRR849508|	`1HZBUwCGjuYFjyHkavdzkh6rQ1W3EFA9l` |  NC_000021.9_1.fq |
+|| `1pTT17NMb2UYs1ZRS96a2z8nXyDEz2_tR` |  NC_000021.9_2.fq |
+|SRR849509| `1_1s_6A-sRxhcWgIUTMU3PiCgp6gbEC17`	|  NC_000021.9_1.fq |
+|| `1ZetrrsOnbHlGLD43RwwJjBSBVP35ABy-` |  NC_000021.9_2.fq |
+|SRR849510|	`1XC8kvuDazTsf5_GDLGoE-c4WrRfZyagw` |  NC_000021.9_1.fq |
+|| `1Hb9PfckXKXT_pegNF_AOA3SVa4oh6zRA` |  NC_000021.9_2.fq |
 
 
 ## CONTROL DE CALIDAD
