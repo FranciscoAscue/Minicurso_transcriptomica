@@ -254,143 +254,63 @@ multiqc .
 ## IMPORTAR A R
 
 ``` r
-source("https://bioconductor.org/biocLite.R")
-biocLite("DESeq2") ; library(DESeq2)
-biocLite("ggplot2") ; library(ggplot2)
-biocLite("clusterProfiler") ; library(clusterProfiler)
-biocLite("biomaRt") ; library(biomaRt)
-biocLite("ReactomePA") ; library(ReactomePA)
-biocLite("DOSE") ; library(DOSE)
-biocLite("KEGG.db") ; library(KEGG.db)
-biocLite("org.Mm.eg.db") ; library(org.Mm.eg.db)
-biocLite("org.Hs.eg.db") ; library(org.Hs.eg.db)
-biocLite("pheatmap") ; library(pheatmap)
-biocLite("genefilter") ; library(genefilter)
-biocLite("RColorBrewer") ; library(RColorBrewer)
-biocLite("GO.db") ; library(GO.db)
-biocLite("topGO") ; library(topGO)
-biocLite("dplyr") ; library(dplyr)
-biocLite("gage") ; library(gage)
-biocLite("ggsci") ; library(ggsci)
+library(DESeq2)
+library(ggplot2)
+library(clusterProfiler)
+library(biomaRt)
+library(ReactomePA)
+library(DOSE)
+library(KEGG.db)
+library(org.Hs.eg.db)
+library(pheatmap)
+library(genefilter)
+library(RColorBrewer)
+library(GO.db)
+library(topGO)
+library(dplyr)
+library(gage)
+library(ggsci)
 ```
 
 
 ``` r
-# Import gene counts table
-# - skip first row (general command info)
-# - make row names the gene identifiers
-countdata <- read.table("example/final_counts.txt", header = TRUE, skip = 1, row.names = 1)
+data <- read.table("final_counts.txt", header = TRUE, skip = 1, row.names = 1)
+#head(data)
+data <- data[,c(-1:-5)]
+colnames(data) <- gsub("_21.bam", "", colnames(data), fixed = T)
+colnames(data) <- gsub("_21.bam", "", colnames(data), fixed = T)
+colnames(data) <- gsub("..", "", colnames(data), fixed = T)
+#data
 
-# Remove .bam + '..' from column identifiers
-colnames(countdata) <- gsub(".bam", "", colnames(countdata), fixed = T)
-colnames(countdata) <- gsub(".bam", "", colnames(countdata), fixed = T)
-colnames(countdata) <- gsub("..", "", colnames(countdata), fixed = T)
-
-# Remove length/char columns
-countdata <- countdata[ ,c(-1:-5)]
-
-# Make sure ID's are correct
-head(countdata)
-```
-
-    ##               SRR1374924 SRR1374923 SRR1374921 SRR1374922
-    ## 4933401J01Rik          0          0          0          0
-    ## Gm26206                0          0          0          0
-    ## Xkr4                 214        302        459        425
-    ## Gm18956                0          0          0          0
-    ## Gm37180                4          2          3          1
-    ## Gm37363                1          0          0          1
-
-##### 7c. Import metadata text file. The SampleID's must be the first column.
-
-``` r
-# Import metadata file
-# - make row names the matching sampleID's from the countdata
-metadata <- read.delim("example/metadata.txt", row.names = 1)
-
-# Add sampleID's to the mapping file
+metadata <- read.delim("muestras.txt", row.names = 1)
 metadata$sampleid <- row.names(metadata)
-
-# Reorder sampleID's to match featureCounts column order. 
-metadata <- metadata[match(colnames(countdata), metadata$sampleid), ]
-
-# Make sure ID's are correct
-head(metadata)
-```
-
-    ##            Group Replicate   sampleid
-    ## SRR1374924 HiGlu      Rep2 SRR1374924
-    ## SRR1374923 HiGlu      Rep1 SRR1374923
-    ## SRR1374921 LoGlu      Rep1 SRR1374921
-    ## SRR1374922 LoGlu      Rep2 SRR1374922
-
-##### 7d. Make DESeq2 object from counts and metadata
-
-``` r
-# - countData : count dataframe
-# - colData : sample metadata in the dataframe with row names as sampleID's
-# - design : The design of the comparisons to use. 
-#            Use (~) before the name of the column variable to compare
-ddsMat <- DESeqDataSetFromMatrix(countData = countdata,
-                                 colData = metadata,
-                                 design = ~Group)
+metadata <- metadata[match(colnames(data), metadata$sampleid),]
+#head(metadata)
 
 
-# Find differential expressed genes
+#condition <- factor(c("A2058","A375","C32","Malme3M","SKMEL28", "SKMEL5","WM2664"))
+#design <- as.formula(~Group)
+
+#modelMatrix <- model.matrix(design, data = metadata)
+#modelMatrix
+
+ddsMat <- DESeqDataSetFromMatrix(countData = data, colData = metadata , design = ~1)
 ddsMat <- DESeq(ddsMat)
 ```
-
-    ## estimating size factors
-
-    ## estimating dispersions
-
-    ## gene-wise dispersion estimates
-
-    ## mean-dispersion relationship
-
-    ## final dispersion estimates
-
-    ## fitting model and testing
-
-##### 7e. Get basic statisics about the number of significant genes
-
-``` r
-# Get results from testing with FDR adjust pvalues
-results <- results(ddsMat, pAdjustMethod = "fdr", alpha = 0.05)
-
-# Generate summary of testing. 
-summary(results)
-```
-
-    ## 
-    ## out of 10448 with nonzero total read count
-    ## adjusted p-value < 0.05
-    ## LFC > 0 (up)     : 996, 9.5% 
-    ## LFC < 0 (down)   : 767, 7.3% 
-    ## outliers [1]     : 0, 0% 
-    ## low counts [2]   : 4709, 45% 
-    ## (mean count < 7)
-    ## [1] see 'cooksCutoff' argument of ?results
-    ## [2] see 'independentFiltering' argument of ?results
-
-``` r
-# Check directionality of the log2 fold changes
-## Log2 fold change is set as (LoGlu / HiGlu)
-## Postive fold changes = Increased in LoGlu
-## Negative fold changes = Decreased in LoGlu
-mcols(results, use.names = T)
-```
-
-    ## DataFrame with 6 rows and 2 columns
-    ##                        type                                  description
-    ##                 <character>                                  <character>
-    ## baseMean       intermediate    mean of normalized counts for all samples
-    ## log2FoldChange      results log2 fold change (MAP): Group LoGlu vs HiGlu
-    ## lfcSE               results         standard error: Group LoGlu vs HiGlu
-    ## stat                results         Wald statistic: Group LoGlu vs HiGlu
-    ## pvalue              results      Wald test p-value: Group LoGlu vs HiGlu
-    ## padj                results                        fdr adjusted p-
-
+<font color="red">Warning message in DESeq(ddsMat):
+“the design is ~ 1 (just an intercept). is this intended?”
+estimating size factors
+estimating dispersions
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+fitting model and testing
+-- replacing outliers and refitting for 18 genes
+-- DESeq argument 'minReplicatesForReplace' = 7 
+-- original counts are preserved in counts(dds)
+estimating dispersions
+fitting model and testing   
+</font>
 
 
 [Pagian anterior <<](NGSLinux.md)  [Menu Curso](README.md#cronograma-de-actividades)
