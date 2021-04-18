@@ -186,26 +186,37 @@ Antes de empezar con el alineamiento se va desargar el archivo de anotación gff
   
 ```
 
-#### indexar el genoma con gtf-file
+#### Indexar el genoma con gtf-file
+#### Descargamos primero el archivo gff3 del NCBI
 
+```bash
+wget -O NC_000021.9.gff3 "https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?db=nuccore&report=gff3&id=NC_000021.9,NC_000021.9"
+
+```
+#### Convertimos el archivo gff3 a gtf
+```bash
+
+gffread -E -O -T NC_000021.9.gff -o NC_000021.9.gtf
+
+```
 
     STAR \
     --runMode genomeGenerate \
     --genomeDir genome/star_index \
-    --genomeFastaFiles genome/*.fna \
-    --sjdbGTFfile annotation/*.gtf \
-    --runThreadN 4
+    --genomeFastaFiles genome/NC_000021.9.fna \
+    --sjdbGTFfile annotation/NC_000021.9.gtf \
+    --runThreadN 2
 
 #### Command
 
     # Help
     STAR -h
 
-    # Run STAR (~10min)
+    # Run STAR (~3min)
     STAR \
     --genomeDir genome/star_index \
     --readFilesIn results/trimmed/sample_filtered.fq  \
-    --runThreadN 4 \
+    --runThreadN 2 \
     --outSAMtype BAM SortedByCoordinate \
     --quantMode GeneCounts
 
