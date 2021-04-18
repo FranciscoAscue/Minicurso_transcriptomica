@@ -1,5 +1,5 @@
 
-[HOME:arrow_up:]() | [MANUALES :blue_book:]() | [INFORMACION :question:]()|
+[HOME:arrow_up:](Minicurso_transcriptomica) | [MANUALES :blue_book:](1-3Linux.md) | [INFORMACION :question:](Minicurso_transcriptomica#organizador)|
 |:--------|:--------------:|----------------:|
 
 <img align="right" width="15%" src="Images/descarga.jpeg">
