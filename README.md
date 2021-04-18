@@ -1,6 +1,5 @@
 
-[HOME:arrow_up:](README.md) | [MANUALES :blue_book:](1-3Linux.md) | [INFORMACION :question:](README.md#organizador)|
-|:--------|:--------------:|----------------:|
+[HOME](README.md) | [MANUALES](1-3Linux.md) | [INFORMACION](README.md#organizador)|
 
 <img align="right" width="15%" src="Images/descarga.jpeg">
 
