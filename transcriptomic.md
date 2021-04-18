@@ -46,7 +46,11 @@ bash preinstall.sh
   │  
   │   └── scripts/                   <- Scripts usados con el curso
 ```
-#1351
+
+## REPOSITORIO DE DATOS DE TRANSCRIPTOMA
+
+Los datos utilizados en este curso fueron descargados de [EMBL-EBI](https://www.ebi.ac.uk/), usando la base de datos de [Expression Atlas](https://www.ebi.ac.uk/gxa/home). Para mas detalles del los datos utilizados en este curso puede revisar el siguiente [Link](https://www.omicsdi.org/dataset/atlas-experiments/E-GEOD-46817) o puede visualizar directamente a partir de la base de datos **Expression Atlas** [E-GEOD-46817](https://www.ebi.ac.uk/gxa/experiments/E-GEOD-46817/Results) 
+
 
 ## CONTENIDO
 
@@ -60,6 +64,7 @@ bash preinstall.sh
 
 ## DESCARGAR SECUENCIAS
 
+### Para descargar desde SRA-db
 ```bash
 ### Sra-tool kit
 
@@ -70,6 +75,31 @@ prefetch.2 -a 'ascp|/PATH_to_aspera/.aspera/connect/etc/asperaweb_id_dsa.openssh
 fasterq-dump SR.sra -S -m 1G -O ~/Curso_transcriptomica/RNA_seq/reads -e 2
 
 ```
+
+### Para descargar datos utilizados en el curso
+
+```bash
+wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=FILEID' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=FILEID" -O FILENAME && rm -rf /tmp/cookies.txt
+
+```
+
+|SAMPLE| FILEID | FILENAME |   
+|:----------:|:-------------:|:-----------:|
+|SRR849504| 1p6jTh3JYK3mCmusOj3dj_fRLc2G4v5-s |	NC_000021.9_1.fq |
+|| 1R9R9d9vETQNuOwKOqXUQfkIufmrBXWef |  NC_000021.9_2.fq |
+|SRR849505| 1dGt-SSyze4yuNqtN9MPXGIeBj42I3YFf |	 NC_000021.9_1.fq |
+|| 18eSbO-rEWt9iv22vlPlb8YaisudC8UIq |  NC_000021.9_2.fq |
+|SRR849506|	1FGk-0jAOMk2msL6buFAnMhYgpXve4Z8t |  NC_000021.9_1.fq |
+|| 18vp7LD-makAdcrpyaoqNOp6D1J6dvtEr |  NC_000021.9_2.fq |
+|SRR849507|	1WceQz3qDvlFAhBQMt4YJPSCguUYNcaJr |  NC_000021.9_1.fq |
+|| 1CGjXGrTS6iIJ2e_Y2bcvfBI60FenlAB7 |  NC_000021.9_2.fq |
+|SRR849508|	1HZBUwCGjuYFjyHkavdzkh6rQ1W3EFA9l |  NC_000021.9_1.fq |
+|| 1pTT17NMb2UYs1ZRS96a2z8nXyDEz2_tR |  NC_000021.9_2.fq |
+|SRR849509| 1_1s_6A-sRxhcWgIUTMU3PiCgp6gbEC17	|  NC_000021.9_1.fq |
+|| 1ZetrrsOnbHlGLD43RwwJjBSBVP35ABy- |  NC_000021.9_2.fq |
+|SRR849510|	1XC8kvuDazTsf5_GDLGoE-c4WrRfZyagw |  NC_000021.9_1.fq |
+|| 1Hb9PfckXKXT_pegNF_AOA3SVa4oh6zRA |  NC_000021.9_2.fq |
+
 
 ## CONTROL DE CALIDAD
 ```bash
