@@ -1,21 +1,25 @@
-[Pagian anterior <<](NGSLinux.md)  [Menu Curso](README.md#cronograma-de-actividades)
+[Página anterior<<](NGSLinux.md)  [Menu Curso](README.md#cronograma-de-actividades)
 
 Analisis de datos RNA-Seq
 ================
 
-### Introducción
+## Introducción
 
 
-
-#### A. Instalacion de programas
+### Instalacion de programas
 
 
 ``` bash
 git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git
 
+#Ubuntu20
+bash preinstall.sh
+
+#Ubuntu18
+
 bash preinstall.sh
 ```
-
+### Directorio de trabajo
 
 ``` bash
 ── RNA_Seq/
