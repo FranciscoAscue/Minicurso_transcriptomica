@@ -244,6 +244,10 @@ multiqc .
 ── results/5_final_counts/
     └── final_counts.txt                <- Final gene counts across all samples
     └── final_counts.txt.summary        <- Summary of gene summarization 
+
+
+    htseq-count -s no -r pos -t exon -f bam  <BAMFILE> <GTF> > <SALIDA>
+    
 ```
 
 
