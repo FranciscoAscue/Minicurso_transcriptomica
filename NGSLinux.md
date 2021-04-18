@@ -77,7 +77,6 @@ MINLEN:<length>
 ![](https://www.researchgate.net/publication/334902338/figure/fig1/AS:941106548183066@1601388694174/Graph-representation-with-its-tabular-form-and-HISAT2-indexes-and-alignment-output-a.png)
 
 <p align="center" width="100%">
-    <img width="40%" src="https://lh3.googleusercontent.com/proxy/0d_bR1LQIE1jtGz787AbvVg5qch5GUM4qhcKyiY9lpdyFB5uQCNNM2Vh4nzv9M3Csalr8cFAfN2K_2hUcsKRyn0">
     <img width="50%" src="https://i.ytimg.com/vi/6BJbEWyO_N0/maxresdefault.jpg">
     <img width="90%" src="https://gtpb.github.io/ADER18F/pages/images/L05/NGSalignmentworkflow.jpg">
 </p>
