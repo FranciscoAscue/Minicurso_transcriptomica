@@ -3,7 +3,7 @@
 Análisis del Transcriptoma Usando Linux 
 =========
 
-Este repositorio contiene los scripts y archivos que se utilizaran durante el curso. 
+Este repositorio contiene los scripts y archivos que se utilizarán durante el curso. 
 
 ## Descargar repositorio
 Instale previamente `git` (si no lo tiene instalado), clone el repositorio en la direción `$HOME`
@@ -12,7 +12,7 @@ git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git
 ```
 ### Instalar programas
 
-Para la instalacion de programas ejecutar los sripts según sea el caso:
+Para la instalación de programas ejecutar los sripts según sea el caso:
 
 >**Ubuntu 20.04 LTS**
 
@@ -67,7 +67,7 @@ bash preinstallUbuntu18.sh
 |5:00 pm - 6:00 pm|Francisco Ascue|Archivos y formatos para datos de NGS|[FastQ](Images/FastQ.jpg),[SAM](Images/SAM.jpg), [GFF3](Images/gff3.jpg), [GTF](Images/gtf.jpg), [VCF](Images/vcf.png) <br /> [ver manual](NGSLinux.md)|
 |6:00 pm - 7:30 pm|Francisco Ascue|Procesamiento de datos de NGS|fastqc, trimmomatic, bowtie2, spades <br /> [ver manual](NGSLinux.md)|
 
-**RNA-seq para el Análisis de transcriptomico**
+**RNA-seq para el Análisis transcriptomico**
 
 | Horario  |  Presentador  |  Actividad | Programas a utilizar |
 |:----------:|:-------------:|:-----------:|:---------------------:|
@@ -78,6 +78,22 @@ bash preinstallUbuntu18.sh
 |1:30 pm - 3:30 pm|Carlo Gustavo Mormontoy|Bloque II: Normalización y expresión diferencial.|DEseq2, Vennt, EnhancedVolcano|
 |3:30 pm - 4:30 pm|Carlo Gustavo Mormontoy|Bloque III: Anotación funcional y enriquecimiento.|Blast2GO, Cytoscape (BiNGO)|
 |4:30 pm - 6:00 pm|Francisco Ascue|Bloque IV: Expresión diferencial y miscellaneous.|ggplot, pheatmap, KEGG.db, GO,db|
+
+## CERTIFICACIONES
+
+Para los interesados en obtener el certificado de participación se requerirá su asistencia obligatoria durante todo el minicurso y la calificación mínima de 14/20 en el examen de conclusión del minicurso. Además, los postulantes deben participar activamente durante el minicurso respondiendo las preguntas y expresar sus dudas libremente (usando el chat o audio del zoom, y compartiendo pantalla si es necesario para ayudarle eficientemente durante el minicurso).
+
+## ORGANIZADOR
+
+Hamutay - Young Peruvian Scientists Network for Bioscience Research.
+
+### Apoyo Institucional
+
+Sociedad Peruana de Biología
+ISCB RSG of Peru
+
+### Auspiciador
+Milrd
 
 ## Sofwares y pacquetes
 
