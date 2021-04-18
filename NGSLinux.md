@@ -75,7 +75,7 @@ MINLEN:<length>
 ## ALINEAMIENTO
 
 <p align="center" width="100%">
-    <img width="90%" src="https://www.researchgate.net/publication/334902338/figure/fig1/AS:941106548183066@1601388694174/Graph-representation-with-its-tabular-form-and-HISAT2-indexes-and-alignment-output-a.png">
+    <img width="80%" src="https://www.researchgate.net/publication/334902338/figure/fig1/AS:941106548183066@1601388694174/Graph-representation-with-its-tabular-form-and-HISAT2-indexes-and-alignment-output-a.png">
     <img width="50%" src="https://i.ytimg.com/vi/6BJbEWyO_N0/maxresdefault.jpg">
     <img width="90%" src="https://gtpb.github.io/ADER18F/pages/images/L05/NGSalignmentworkflow.jpg">
 </p>
