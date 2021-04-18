@@ -177,13 +177,18 @@ multiqc .
 Antes de empezar con el alineamiento se va desargar el archivo de anotación gff3 del cromosoma 21 y se utilizará el programa **gffread** para convertir al formato gtf, para mas detalles revisar el repositorio del programa [aqui](https://github.com/gpertea/gffread)
 
 ```bash
+## Instalacion a travez de apt
+
+  sudo apt install gffread
+
+## Instalacion desde respositorio.
 
   cd /some/build/dir
   git clone https://github.com/gpertea/gffread
   git clone https://github.com/gpertea/gclib.git
   cd gffread
   make release
-  
+
 ```
 
 #### Indexar el genoma con gtf-file
