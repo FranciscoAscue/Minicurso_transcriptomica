@@ -8,7 +8,7 @@ Este repositorio contiene los scripts y archivos que se utilizaran durante el cu
 ## Descargar repositorio
 Instale previamente `git` (si no lo tiene instalado), clone el repositorio en la direción `$HOME`
 ```bash
-git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git`   
+git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git   
 ```
 ### Instalar programas
 
@@ -30,11 +30,11 @@ bash preinstallUbuntu18.sh
 
 >**Virtual Box (Ubuntu)**   
 
-``Si cuenta con una maquina virtual con sistema operativo Linux (Sea Ubuntu 18.04 o 20.04 LTS) puede aplicar los comandos segun su versión. Aunque es recomendable que  instale **Windonws Subsystem Linux**, ya que consume menos memoria RAM.``
+>Si cuenta con una maquina virtual con sistema operativo Linux (Sea Ubuntu 18.04 o 20.04 LTS) puede aplicar los comandos segun su versión. Aunque es recomendable que  instale **Windonws Subsystem Linux**, ya que consume menos memoria RAM.
 
 >**Otras versiones de Linux (debian, lubuntu, biolinux, linux Mint, etc.)**
 
-```Si presenta algunas de estas distribuciones puede obtar por instalar los programas que utilizaremos durante el curso o sino ponerse en contacto con los organizadores del curso para que puedan apoyarlo en el proceso```
+>Si presenta algunas de estas distribuciones puede obtar por instalar los programas que utilizaremos durante el curso o sino ponerse en contacto con los organizadores del curso para que puedan apoyarlo en el proceso```
 
 |                                               |                                               |
 |-----------------------------------------------|-----------------------------------------------|
