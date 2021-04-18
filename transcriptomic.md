@@ -64,7 +64,7 @@ Los datos utilizados en este curso fueron descargados de [EMBL-EBI](https://www.
 
 ## DESCARGAR SECUENCIAS
 
-### Para descargar desde SRA-db
+### Descargar desde SRA-db
 
 ```bash
 
@@ -137,12 +137,8 @@ multiqc .
 ```bash 
 
 #trim_galore 
-    trim_galore \
-    --quality 20 \
-    --fastqc \
-    --length 25 \
-    --output_dir results/trimmed/ \
-    reads/sample.fastq
+    trim_galore --quality 20 --fastqc --length 25 --output_dir results/trimmed/ reads/SRR849504/NC_000021.9_1_trimmed.fastq
+    
 ```
 
 ## FILTRADO DE rRNA
@@ -150,8 +146,7 @@ multiqc .
 ```bash
 ## sortmerna
 
-    # Save variable of rRNA databases
-    # Save the location of all the databases into one folder
+    # Guardar en una variable los rRNA databases
     sortmernaREF=sortmerna_db/rRNA_databases/silva-arc-16s-id95.fasta,sortmerna_db/index/silva-arc-16s-id95:\
     sortmerna_db/rRNA_databases/silva-arc-23s-id98.fasta,sortmerna_db/index/silva-arc-23s-id98:\
     sortmerna_db/rRNA_databases/silva-bac-16s-id90.fasta,sortmerna_db/index/silva-bac-16s-id95:\
@@ -159,26 +154,41 @@ multiqc .
     sortmerna_db/rRNA_databases/silva-euk-18s-id95.fasta,sortmerna_db/index/silva-euk-18s-id95:\
     sortmerna_db/rRNA_databases/silva-euk-28s-id98.fasta,sortmerna_db/index/silva-euk-28s-id98
 
-    # Run SortMeRNA (~15min)
-    sortmerna \
-    --ref $sortmernaREF \
-    --reads results/2_trimmed_output/sample_trimmed.fq \
-    --aligned results/3_rRNA/aligned/sample_aligned.fq \
-    --other results/3_rRNA/filtered/sample_filtered.fq \
+    # Run SortMeRNA (~4min)
+    
+    sortmerna --ref $sortmernaREF --reads results/trimmed/NC_000021.9_1_trimmed.fq \  
+    --aligned results/sortmerna/aligned/sample_aligned.fq \
+    --other results/sortmerna/filtered/sample_filtered.fq \
     --fastx \
     --log \
     -a 4 \
     -v
 
-    # Move logs into the correct folder
+    # mover los log a resultados
     mv -v results/
 
 ```
 
-
 ## ALINEAMIENTO
 
-# This can take up to 30 minutes to complete
+### Es puede tomar con los datos completos alrededor de 30 minutos
+### Para el curso utilizaremos unicamente el cromosoma 21 [NC_000021.9](https://www.ncbi.nlm.nih.gov/nuccore/NC_000021.9)    
+
+Antes de empezar con el alineamiento se va desargar el archivo de anotación gff3 del cromosoma 21 y se utilizará el programa **gffread** para convertir al formato gtf, para mas detalles revisar el repositorio del programa [aqui](https://github.com/gpertea/gffread)
+
+```bash
+
+  cd /some/build/dir
+  git clone https://github.com/gpertea/gffread
+  git clone https://github.com/gpertea/gclib.git
+  cd gffread
+  make release
+  
+```
+
+#### indexar el genoma con gtf-file
+
+
     STAR \
     --runMode genomeGenerate \
     --genomeDir genome/star_index \
