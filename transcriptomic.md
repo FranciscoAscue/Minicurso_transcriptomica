@@ -65,14 +65,16 @@ Los datos utilizados en este curso fueron descargados de [EMBL-EBI](https://www.
 ## DESCARGAR SECUENCIAS
 
 ### Para descargar desde SRA-db
+
 ```bash
+
 ### Sra-tool kit
 
-prefetch -O ~/Curso_transcriptomica/RNA_seq/reads SR
+prefetch -O ~/Minicurso_transcriptomica/RNA_seq/reads SRR8495--
 
-prefetch.2 -a 'ascp|/PATH_to_aspera/.aspera/connect/etc/asperaweb_id_dsa.openssh' -X 100G -O SRX4501347 SRX4501347
+# prefetch.2 -a 'ascp|/PATH_to_aspera/.aspera/connect/etc/asperaweb_id_dsa.openssh' -X 100G -O SRR8495-- SRX8495--
 
-fasterq-dump SR.sra -S -m 1G -O ~/Curso_transcriptomica/RNA_seq/reads -e 2
+fasterq-dump SRR8495--.sra -S -m 1G -O ~/Minicurso_transcriptomica/RNA_seq/reads -e 2
 
 ```
 
@@ -80,8 +82,8 @@ fasterq-dump SR.sra -S -m 1G -O ~/Curso_transcriptomica/RNA_seq/reads -e 2
 
 ```bash
 wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=FILEID' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=FILEID" -O FILENAME && rm -rf /tmp/cookies.txt
-
 ```
+
 
 |SAMPLE| FILEID | FILENAME |   
 |:----------:|:-------------:|:-----------:|
@@ -102,25 +104,33 @@ wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download
 
 
 ## CONTROL DE CALIDAD
+
 ```bash
-fastqc -t 40 cavtsc_forward_paired.fq.gz cavtsc_reverse_paired.fq.gz -o /mnt/disco2/fascue/cporcellus/results/fastqc/
-fastqc -t 40 cavtsc_forward_unpaired.fq.gz cavtsc_revers_unpaired.fq.gz -o /mnt/disco2/fascue/cporcellus/results/fastqc/
 
-  # Help
-    multiqc -h 
+# fastqc
 
-    # Run multiqc and output results into final folder
-    multiqc results \
-    --outdir results/6_multiQC
+fastqc -t 2 NC_000021.9_1.fq NC_000021.9_2.fq -o ~/Minicurso_transcriptomica/results/quality/multiQC/
 
 #### Output
 
-``` bash
-── results/6_multiQC/
-    └── multiqc_report.html     <- Beautiful figures representing the logs from each step
-    └── multiqc_data/           <-  Folder of data that multiqc found from various log files
-```
+── results/multiQC/
+    └── NC_000021.9_1.html     <- Estadisticas de calidad NC_000021.9_1.fq
+    └── NC_000021.9_2.html     <- Estadisticas de calidad NC_000021.9_2.fq
+    └── NC_000021.9_1.zip      <- Datos obtenidos por Fastqc
+    └── NC_000021.9_2.zip      <- Datos obtenidos por Fastqc 
 
+# multiqc
+
+cd ~/Minicurso_transcriptomica/results/quality/multiQC/
+
+multiqc .
+
+#### Output
+
+── results/multiQC/
+    └── multiqc_report.html     <-  Estadisticas de calidad de todos los archivos fastqc (.html) 
+    └── multiqc_data/           <-  Datos que multiqc encontró de varios archivos de registro (.zip)
+```
     
 ## FILTRADO DE SECUENCIAS
 
