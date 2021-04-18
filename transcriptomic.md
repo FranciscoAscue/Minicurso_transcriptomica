@@ -227,17 +227,16 @@ Antes de empezar con el alineamiento se va desargar el archivo de anotación gff
 
 ## CONTEO DE SECUENCIAS
 
- # Help
     featureCounts -h
-
-    # Change directory into the aligned .BAM folder
-    cd results/4_aligned_sequences/aligned_bam
-
-    # Store list of files as a variable
+    
+```bash
+# guardar los archivos en una variable
     dirlist=$(ls -t ./*.bam | tr '\n' ' ')
+    
     echo $dirlist
 
-    # Run featureCounts on all of the samples (~10 minutes)
+# Correr featureCounts de todas las muestras (~4 minutes)
+    
     featureCounts \
     -a ../../annotation/* \
     -o ../../results/5_final_counts/final_counts.txt \
@@ -245,9 +244,7 @@ Antes de empezar con el alineamiento se va desargar el archivo de anotación gff
     -T 4 \
     $dirlist
 
-    # Change directory back to main folder
-    cd ../../../
-
+```
 #### Output
 
 ``` bash
@@ -255,6 +252,8 @@ Antes de empezar con el alineamiento se va desargar el archivo de anotación gff
     └── final_counts.txt                <- Final gene counts across all samples
     └── final_counts.txt.summary        <- Summary of gene summarization 
 
+```bash
+# Se puede utilzar el program HTSEQ para el mismo proposito
 
     htseq-count -s no -r pos -t exon -f bam  <BAMFILE> <GTF> > <SALIDA>
     
