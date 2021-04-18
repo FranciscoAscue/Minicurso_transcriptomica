@@ -64,7 +64,7 @@ bash preinstallUbuntu18.sh
 |2:30 pm - 3:30 pm|Francisco Ascue|Programas y lenguajes para Bioinformática|biopython, bioconductor, bioperl. <br /> [ver manual](1-3Linux.md)|
 |3:30 pm - 4:00 pm|-|Receso|-|
 |4:00 pm - 5:00 pm|Francisco Ascue|Pipelines y Scripts para Bioinformática|bash script <br /> [ver manual](4-6Linux.md)|
-|5:00 pm - 6:00 pm|Francisco Ascue|Archivos y formatos para datos de NGS|[FastQ](Images/FastQ.jpg),[SAM](Images/SAM.jpg), [GFF3](Images/gff3.jpg), [GTF](Images/gtf.jpg), [VCF](Images/vcf.png)|
+|5:00 pm - 6:00 pm|Francisco Ascue|Archivos y formatos para datos de NGS|[FastQ](Images/FastQ.jpg),[SAM](Images/SAM.jpg), [GFF3](Images/gff3.jpg), [GTF](Images/gtf.jpg), [VCF](Images/vcf.png) <br /> [ver manual](NGSLinux.md)|
 |6:00 pm - 7:30 pm|Francisco Ascue|Procesamiento de datos de NGS|fastqc, trimmomatic, bowtie2, spades <br /> [ver manual](NGSLinux.md)|
 
 **RNA-seq para el Análisis de transcriptomico**
