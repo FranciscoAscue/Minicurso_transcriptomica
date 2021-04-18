@@ -51,7 +51,7 @@ samtools faidx file.fasta
 samtools faidx file.fasta "ID_seq" > ID_seq.fasta
 ```
 
-![](https://www.claruscode.com/wp-content/uploads/2020/08/python-logo.png)
+![](http://1.bp.blogspot.com/-jZDMsk2g5Vk/Us04XCv14zI/AAAAAAAAAw8/b9X7ee4vEME/s1600/python.jpg)
 
 ## PYTHON SCRIPTS
 
@@ -137,7 +137,7 @@ ax, _ = graphic_record.plot(figure_width=10, strand_in_label_threshold=7)
 ```
 <img src="Images/plot_record.png" width="500">
 
-![](https://blog.arsys.es/file/uploads/2020/10/featured-rstudio-1.jpg)
+![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-White.png)
 
 ## R SCRIPTS
 
