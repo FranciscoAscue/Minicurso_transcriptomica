@@ -1,4 +1,4 @@
-<img align="right" width="15%" src="http://hamutay.org/wp-content/themes/rt_protean/custom/images/HAMUTAY%20LOGO%20VERTICAL.jpg">
+<img align="right" width="15%" src="Images/descarga.jpeg">
 
 Minicurso de Análisis del Transcriptoma Usando Linux 
 =========
@@ -36,10 +36,10 @@ bash preinstallUbuntu18.sh
 
 ```Si presenta algunas de estas distribuciones puede obtar por instalar los programas que utilizaremos durante el curso o sino ponerse en contacto con los organizadores del curso para que puedan apoyarlo en el proceso```
 
-|                                               |                                               |                                               |
-|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| <img width="100%" src="Images/descarga.jpeg"> | <img width="100%" src="Images/descarga2.jpg"> | <img width="100%" src="Images/descarga3.jpg"> |
-| <img width="100%" src="Images/descarga4.jpg"> | <img width="100%" src="Images/descarga5.jpg"> | <img width="100%" src="Images/descarga6.jpg"> |
+|                                               |                                               |
+|-----------------------------------------------|-----------------------------------------------|
+| <img width="100%" src="Images/descarga2.jpg"> | <img width="100%" src="Images/descarga3.jpg"> |
+| <img width="100%" src="Images/descarga4.jpg"> | <img width="100%" src="Images/descarga5.jpg"> |
 
 ## Numero de participantes
 
