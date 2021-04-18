@@ -14,7 +14,7 @@
 
 ## SIMULACION DE READS
 
-```bash
+```
 SimRead -- Program to create simulation reads for illumina sequencing in GNU/Linux. 
 
 created by Francisco Ascue (francisco.ascue131@gmail.com)
