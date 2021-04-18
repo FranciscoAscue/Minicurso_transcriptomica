@@ -298,19 +298,19 @@ ddsMat <- DESeqDataSetFromMatrix(countData = data, colData = metadata , design =
 ddsMat <- DESeq(ddsMat)
 ```
 
-`Warning message in DESeq(ddsMat):  
-“the design is ~ 1 (just an intercept). is this intended?”  
-estimating size factors  
-estimating dispersions  
-gene-wise dispersion estimates  
-mean-dispersion relationship  
-final dispersion estimates  
-fitting model and testing  
--- replacing outliers and refitting for 18 genes  
--- DESeq argument 'minReplicatesForReplace' = 7   
--- original counts are preserved in counts(dds)  
-estimating dispersions  
-fitting model and testing}`
+`Warning message in DESeq(ddsMat):`   
+`“the design is ~ 1 (just an intercept). is this intended?`   
+`estimating size factor`   
+`estimating dispersion`   
+`gene-wise dispersion estimate`   
+`mean-dispersion relationshi`   
+`final dispersion estimate`   
+`fitting model and testin`   
+`-- replacing outliers and refitting for 18 gene`   
+`-- DESeq argument 'minReplicatesForReplace' = 7`     
+`-- original counts are preserved in counts(dds`  
+`estimating dispersion`   
+`fitting model and testi`  
    
 
 [Pagian anterior <<](NGSLinux.md)  [Menu Curso](README.md#cronograma-de-actividades)
