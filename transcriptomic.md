@@ -310,7 +310,105 @@ ddsMat <- DESeq(ddsMat)
 `-- DESeq argument 'minReplicatesForReplace' = 7`     
 `-- original counts are preserved in counts(dds`  
 `estimating dispersion`   
-`fitting model and testi`  
+`fitting model and testi` 
+
+```r
+results <- results(ddsMat, pAdjustMethod = "fdr", alpha = 0.05)
+summary(results)
+```
+    out of 432 with nonzero total read count
+    adjusted p-value < 0.05
+    LFC > 0 (up)       : 225, 52%
+    LFC < 0 (down)     : 0, 0%
+    outliers [1]       : 0, 0%
+    low counts [2]     : 10, 2.3%
+    (mean count < 0)
+    [1] see 'cooksCutoff' argument of ?results
+    [2] see 'independentFiltering' argument of ?results
+
+```r
+mcols(results, user.names = True)
+```
+
+    DataFrame with 6 rows and 2 columns
+                           type            description
+                    <character>            <character>
+    baseMean       intermediate mean of normalized c..
+    log2FoldChange      results log2 fold change (ML..
+    lfcSE               results standard error: Inte..
+    stat                results Wald statistic: Inte..
+    pvalue              results Wald test p-value: I..
+    padj                results  fdr adjusted p-values
    
+```r
+results$description <- mapIds( x = org.Hs.eg.db, keys = row.names(results), column = "GENENAME", keytype = "SYMBOL", multiVals = "first")
+results$symbol <- row.names(results)
+results$entrez <- mapIds(x = org.Hs.eg.db, keys= row.names(results), column = "ENTREZID", keytype = "SYMBOL", multiVals = "first")
+results$ensembl <- mapIds(x = org.Hs.eg.db, keys = row.names(results), column = "ENSEMBL", keytype = "SYMBOL", multiVals = "first")
+```
+```r
+results_sig <- subset(results, padj < 0.05)
+head(results_sig)
+```
+
+    log2 fold change (MLE): Intercept 
+    Wald test p-value: Intercept 
+    DataFrame with 6 rows and 10 columns
+                  baseMean log2FoldChange     lfcSE      stat      pvalue
+                 <numeric>      <numeric> <numeric> <numeric>   <numeric>
+    GATD3B        36.51642        5.19047  0.272218  19.06737 4.71426e-81
+    LOC102724159  50.25903        5.65131  0.327048  17.27974 6.68489e-67
+    LOC102724200   8.13856        3.02477  0.480640   6.29322 3.10953e-10
+    SIK1B         19.51849        4.28677  0.362775  11.81662 3.20333e-32
+    LOC102724701  36.76702        5.20034  0.338991  15.34063 4.09180e-53
+    CBSL          16.40618        4.03617  0.617085   6.54070 6.12330e-11
+                        padj            description       symbol      entrez
+                   <numeric>            <character>  <character> <character>
+    GATD3B       1.96972e-80 glutamine amidotrans..       GATD3B   102724023
+    LOC102724159 2.66134e-66 periodic tryptophan .. LOC102724159   102724159
+    LOC102724200 8.00135e-10 trafficking protein .. LOC102724200   102724200
+    SIK1B        1.11719e-31 salt inducible kinas..        SIK1B   102724428
+    LOC102724701 1.54173e-52 uncharacterized LOC1.. LOC102724701   102724701
+    CBSL         1.65643e-10 cystathionine beta-s..         CBSL   102724560
+                         ensembl
+                     <character>
+    GATD3B       ENSG00000280071
+    LOC102724159 ENSG00000275464
+    LOC102724200              NA
+    SIK1B        ENSG00000275993
+    LOC102724701 ENSG00000275496
+    CBSL         ENSG00000274276
+    
+```r
+ddsMat_rlog <- rlog(ddsMat, blind = FALSE)
+mat <- assay(ddsMat_rlog[row.names(results_sig)])[1:40, ]
+
+##
+
+annotation_col = data.frame(
+  Group = factor(colData(ddsMat_rlog)$Group), 
+  row.names = colData(ddsMat_rlog)$sampleid
+)
+
+##
+
+
+ann_colors = list(
+  Group = c(A2058 = "orange", A375 = "yellow", C32 = "green", Malme3M = "lightgreen", SKMEL28 = "blue", SKMEL5 = "purple", WM2664 = "pink"), 
+  sampleid= c(a = "green")  
+)
+
+##
+
+pheatmap(mat = mat, 
+         color = colorRampPalette(brewer.pal(9, "YlOrBr"))(255), 
+         scale = "row", # Scale genes to Z-score (how many standard deviations)
+         annotation_col = annotation_col, # Add multiple annotations to the samples
+         annotation_colors = ann_colors,# Change the default colors of the annotations
+         fontsize = 5, # Make fonts smaller
+         cellwidth = 55, # Make the cells wider
+         show_colnames = F)
+```
+![](Images/heatmap.png)
 
 [Pagian anterior <<](NGSLinux.md)  [Menu Curso](README.md#cronograma-de-actividades)
