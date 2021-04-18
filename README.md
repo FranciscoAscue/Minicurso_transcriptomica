@@ -1,6 +1,6 @@
 <img align="right" width="15%" src="Images/descarga.jpeg">
 
-Minicurso de Análisis del Transcriptoma Usando Linux 
+Análisis del Transcriptoma Usando Linux 
 =========
 
 Este repositorio contiene los scripts y archivos que se utilizaran durante el curso. 
