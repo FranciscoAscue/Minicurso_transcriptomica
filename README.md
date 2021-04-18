@@ -1,3 +1,7 @@
+
+[HOME:arrow_up:]() | [MANUALES :blue_book:]() | [INFORMACION :question:]()|
+|:--------|:--------------:|----------------:|
+
 <img align="right" width="15%" src="Images/descarga.jpeg">
 
 Análisis del Transcriptoma Usando Linux 
