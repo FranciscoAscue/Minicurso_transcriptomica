@@ -2,10 +2,13 @@
 
 ###bowtie2-build 
 
-###CONSTANTS
 
-WD="/mnt/disco2/fascue/Cporecellus"
-REF="${WD}/data/reference/------"
+###CONSTANTS
+# $Project: project name of SimRead program
+# $reference : Download genome reference
+
+WD="$HOME/Minicurso_trasncriptomica/$Project"
+REF="${WD}/data/reference/$reference"
 IDX="${REF}/index"
 
 ###EXECUTION
