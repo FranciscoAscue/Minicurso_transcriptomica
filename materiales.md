@@ -56,15 +56,15 @@ bash preinstallUbuntu18.sh
 |[3.3 FILTRADO DE READS](NGSLinux.md#filtrado-de-reads)  |
 |[3.4 ENSAMBLAJE](NGSLinux.md#ensamblaje)  |
 ||
-|[4. ANALISIS DE DATOS RNAseq](trancriptomic.md)|   
+|[4. ANALISIS DE DATOS RNAseq](transcriptomic.md)|  
 ||
-|[4.1 DESCARGAR SECUENCIAS](trancriptomic.md#descargar-secuencias)|
-|[4.2 CONTROL DE CALIDAD](trancriptomic.md#control-de-calidad)|
-|[4.3 FILTRADO DE SECUENCIAS](trancriptomic.md#filtrado-de-secuencias)|
-|[4.4 FILTRADO DE rRNA](trancriptomic.md#filtrado-de-rrna)|
-|[4.5 ALINEAMIENTO](trancriptomic.md#alineamiento)|
-|[4.6 CONTEO DE SECUENCIAS](trancriptomic.md#conteo-de-secuencias)|
-|[4.7 IMPORTAR A R](trancriptomic.md#importar-a-r)|
+|[4.1 DESCARGAR SECUENCIAS](transcriptomic.md#descargar-secuencias)|
+|[4.2 CONTROL DE CALIDAD](transcriptomic.md#control-de-calidad)|
+|[4.3 FILTRADO DE SECUENCIAS](transcriptomic.md#filtrado-de-secuencias)|
+|[4.4 FILTRADO DE rRNA](transcriptomic.md#filtrado-de-rrna)|
+|[4.5 ALINEAMIENTO](transcriptomic.md#alineamiento)|
+|[4.6 CONTEO DE SECUENCIAS](transcriptomic.md#conteo-de-secuencias)|
+|[4.7 IMPORTAR A R](transcriptomic.md#importar-a-r)|
 
 
 
