@@ -6,7 +6,7 @@
 Análisis del Transcriptoma Usando Linux 
 =========
 
-Este repositorio contiene los scripts y archivos que se utilizarán durante el curso. Antes de empesar asegurese de instalar los programas que seran utilizados durante el curso ([scripts de instalación](manuales.md#instalar-programas)), ademas de configurar los paquetes de R y softwares adicionales ([Adicional software](manuales.md#software-y-paquetes-adicionales)), si presenta algun contratiempo en la instalación de los programas para el curso avisar con antelación a los organizadores del curso.
+Este repositorio contiene los scripts y archivos que se utilizarán durante el curso. Antes de empesar asegurese de instalar los programas que seran utilizados durante el curso ([Scripts de instalación](materiales.md#instalar-programas)), ademas de configurar los paquetes de R y softwares adicionales ([Adicional softwares](materiales.md#software-y-paquetes-adicionales)), si presenta algun contratiempo en la instalación de los programas para el curso avisar con antelación a los organizadores del curso.
 
 # Detalles del evento
 
@@ -71,7 +71,7 @@ Para los interesados en obtener el certificado de participación se requerirá s
 
 <img width="20%" src="http://hamutay.org/wp-content/uploads/2019/12/simbolo-HD-transparente.png">
 
-*Hamutay - Young Peruvian Scientists Network for Bioscience Research.*
+<sub><sup>Hamutay - Young Peruvian Scientists Network for Bioscience Research.</sup></sub>
 
 ### Apoyo Institucional
 
