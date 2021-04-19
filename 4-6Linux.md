@@ -4,7 +4,7 @@
     <img src="https://www.umassmed.edu/globalassets/informatics/images/slideshow-home/informatics_home.jpg?format=jpeg&quality=80">
 </p>
 
-BASH SCRIPT PARA DATOS NGS
+BASH SCRIPT PARA NGS
 ==================
 
 ## CONTENIDO
