@@ -1,9 +1,7 @@
 #!/usr/bin/python3
 
 ## pip install --upgrade pip  
-# pip install cython
-# pip install pysam (ubuntu)
-# pip install bio
+## pip install Bio
 
 from Bio import Entrez
 from Bio import SeqIO
