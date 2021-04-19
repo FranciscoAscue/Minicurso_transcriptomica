@@ -8,36 +8,16 @@ Análisis del Transcriptoma Usando Linux
 
 Este repositorio contiene los scripts y archivos que se utilizarán durante el curso. 
 
-## Descargar repositorio
-Instale previamente `git` (si no lo tiene instalado), clone el repositorio en la direción `$HOME`
-```bash
-git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git   
-```
-### Instalar programas
+# Detalles del evento
+|                          |                     |
+|--------------------------|---------------------|
+|Apertura de inscripciones | 15 de marzo del 2021|
+|Fecha del evento	| 24 y 25 de abril del 2021|
+|Cierre de inscripciones | 4 de abril del 2021|
+|Fecha de publicación de seleccionados | 11 de abril del 2021|
+|Lugar del evento| Virtual mediante la plataforma zoom|
 
-Para la instalación de programas ejecutar los sripts según sea el caso:
 
->**Ubuntu 20.04 LTS**
-
->***En caso de contar con WSL (Windonws Subsystem Linux), descargar Ubuntu 20.04 LTS***
-
-```bash
-bash preinstall.sh
-```
-
->**Ubuntu 18.04 LTS**
-
-```bash 
-bash preinstallUbuntu18.sh
-```
-
->**Virtual Box (Ubuntu)**   
-
->Si cuenta con una maquina virtual con sistema operativo Linux (Sea Ubuntu 18.04 o 20.04 LTS) puede aplicar los comandos segun su versión. Aunque es recomendable que  instale **Windonws Subsystem Linux**, ya que consume menos memoria RAM.
-
->**Otras versiones de Linux (debian, lubuntu, biolinux, linux Mint, etc.)**
-
->Si presenta algunas de estas distribuciones puede obtar por instalar los programas que utilizaremos durante el curso o sino ponerse en contacto con los organizadores del curso para que puedan apoyarlo en el proceso```
 
 |                                               |                                               |
 |-----------------------------------------------|-----------------------------------------------|
@@ -98,16 +78,4 @@ ISCB RSG of Peru
 ### Auspiciador
 Milrd
 
-## Sofwares y pacquetes
-
-Samtools: https://github.com/samtools/samtools    
-featureCounts: https://pubmed.ncbi.nlm.nih.gov/24227677/    
-SortMeRNA: https://bioinfo.lifl.fr/RNA/sortmerna/     
-STAR: https://github.com/alexdobin/STAR     
-DEseq2: https://bioconductor.org/packages/release/bioc/html/DESeq2.html     
-Vennt: https://github.com/drpowell/vennt     
-EnhancedVolcano: https://github.com/kevinblighe/EnhancedVolcano     
-Blast2GO: https://www.blast2go.com/ (Free Trial)    
-Cytoscape: https://cytoscape.org/     
-BiNGO: https://www.psb.ugent.be/cbd/papers/BiNGO/Home.html   
 
