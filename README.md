@@ -1,5 +1,5 @@
 
-[HOME](README.md) - [MANUALES](1-3Linux.md) - [INFORMACION](README.md#organizador)
+[HOME](README.md) - [MATERIALES](materiales.md) - [INFORMACION](README.md#organizador)
 
 <img align="right" width="15%" src="Images/descarga.jpeg">
 
