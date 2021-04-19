@@ -4,13 +4,13 @@
 Materiales del curso
 =====================
 
-### Descargar repositorio
+## Descargar repositorio
 
 Si desea descargar este repositorio instale previamente `git` (si no lo tiene instalado), clone el repositorio en la direción `$HOME` con el siguiente comando, los manuales del curso estan incluidos en formato `markdown`
 ```bash
 git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git   
 ```
-### Instalar programas
+## Instalar programas
 
 Para la instalación de programas ejecutar los sripts según sea el caso:
 
@@ -69,12 +69,9 @@ bash preinstallUbuntu18.sh
 
 
 
-## Softwares y paquetes
+## Softwares y paquetes adicionales
 
-Samtools: https://github.com/samtools/samtools    
-featureCounts: https://pubmed.ncbi.nlm.nih.gov/24227677/    
 SortMeRNA: https://bioinfo.lifl.fr/RNA/sortmerna/     
-STAR: https://github.com/alexdobin/STAR     
 DEseq2: https://bioconductor.org/packages/release/bioc/html/DESeq2.html     
 Vennt: https://github.com/drpowell/vennt     
 EnhancedVolcano: https://github.com/kevinblighe/EnhancedVolcano     
