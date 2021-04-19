@@ -1,6 +1,6 @@
 [Pagian anterior <<](4-6Linux.md)  [Menu Curso](README.md#cronograma-de-actividades)  [>>Siguiente Pagina](transcriptomic.md)
 
-Analisis de datos NGS
+Análisis de datos NGS
 =====================
 
 <p align="center" width="100%">
