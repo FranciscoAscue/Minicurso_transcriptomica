@@ -69,6 +69,8 @@ Para los interesados en obtener el certificado de participación se requerirá s
 
 ## ORGANIZADOR
 
+<img width="20%" src="http://hamutay.org/wp-content/uploads/2019/12/simbolo-HD-transparente.png">
+
 Hamutay - Young Peruvian Scientists Network for Bioscience Research.
 
 ### Apoyo Institucional
