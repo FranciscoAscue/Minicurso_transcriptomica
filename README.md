@@ -12,11 +12,11 @@ Este repositorio contiene los scripts y archivos que se utilizarán durante el c
 
 |                          |                     |
 |--------------------------|---------------------|
-|Apertura de inscripciones | `15` de marzo del `2021`|
-|Fecha del evento	| `24` y `25` de abril del `2021`|
-|Cierre de inscripciones | `4` de abril del `2021`|
-|Fecha de publicación de seleccionados | `11` de abril del 2021|
-|Lugar del evento| Virtual mediante la plataforma zoom|
+|Apertura de inscripciones | `15 de marzo del 2021`|
+|Fecha del evento	| `24 y 25 de abril del 2021`|
+|Cierre de inscripciones | `4 de abril del 2021`|
+|Fecha de publicación de seleccionados | `11 de abril del 2021`|
+|Lugar del evento| `Virtual mediante la plataforma zoom`|
 
 
 
@@ -71,13 +71,13 @@ Para los interesados en obtener el certificado de participación se requerirá s
 
 <img width="20%" src="http://hamutay.org/wp-content/uploads/2019/12/simbolo-HD-transparente.png">
 
-Hamutay - Young Peruvian Scientists Network for Bioscience Research.
+*Hamutay - Young Peruvian Scientists Network for Bioscience Research.*
 
 ### Apoyo Institucional
 
 <p align="left" width="100%">
-    <img width="12%" src="https://bioinformatica.pe/wp-content/uploads/2020/05/logito.png"> 
-    <img width="14%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJzqQ8eOdssSJ89aYEHuaI0ujBIcVPEZQTTKROAAopxHaRQsIBc74ZCH5eVpqEq81MSo&usqp=CAU"> 
+    <img width="14%" src="https://bioinformatica.pe/wp-content/uploads/2020/05/logito.png"> 
+    <img width="12%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXJzqQ8eOdssSJ89aYEHuaI0ujBIcVPEZQTTKROAAopxHaRQsIBc74ZCH5eVpqEq81MSo&usqp=CAU"> 
 </p>
 
 ### Auspiciador
