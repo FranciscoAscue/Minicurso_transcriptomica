@@ -9,6 +9,7 @@ Análisis del Transcriptoma Usando Linux
 Este repositorio contiene los scripts y archivos que se utilizarán durante el curso. 
 
 # Detalles del evento
+
 |                          |                     |
 |--------------------------|---------------------|
 |Apertura de inscripciones | 15 de marzo del 2021|
