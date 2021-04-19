@@ -71,10 +71,10 @@ bash preinstallUbuntu18.sh
 
 ## Softwares y paquetes adicionales
 
-SortMeRNA: https://bioinfo.lifl.fr/RNA/sortmerna/     
-DEseq2: https://bioconductor.org/packages/release/bioc/html/DESeq2.html     
-Vennt: https://github.com/drpowell/vennt     
-EnhancedVolcano: https://github.com/kevinblighe/EnhancedVolcano     
-Blast2GO: https://www.blast2go.com/ (Free Trial)    
-Cytoscape: https://cytoscape.org/     
-BiNGO: https://www.psb.ugent.be/cbd/papers/BiNGO/Home.html   
+[SortMeRNA](https://bioinfo.lifl.fr/RNA/sortmerna/)   
+[DEseq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)     
+[Vennt](https://github.com/drpowell/vennt)     
+[EnhancedVolcano](https://github.com/kevinblighe/EnhancedVolcano)     
+[Blast2GO](https://www.blast2go.com/) (Free Trial)    
+[Cytoscape](https://cytoscape.org/)     
+[BiNGO](https://www.psb.ugent.be/cbd/papers/BiNGO/Home.html)   
