@@ -6,7 +6,7 @@
 Análisis del Transcriptoma Usando Linux 
 =========
 
-Este repositorio contiene los scripts y archivos que se utilizarán durante el curso. Antes de empesar asegurese de instalar los programas que seran utilizados durante el curso ([Scripts de instalación](materiales.md#instalar-programas)), ademas de configurar los paquetes de R y softwares adicionales ([Adicional softwares](materiales.md#software-y-paquetes-adicionales)), si presenta algun contratiempo en la instalación de los programas para el curso avisar con antelación a los organizadores del curso.
+Este repositorio contiene los scripts y archivos que se utilizarán durante el curso. Antes de empezar asegúrese de instalar los programas que serán utilizados durante el curso ([Scripts de instalación](materiales.md#instalar-programas)), además de configurar los paquetes de R y softwares adicionales ([Adicional softwares](materiales.md#software-y-paquetes-adicionales)), si presenta algún contratiempo en la instalación de los programas para el curso avisar con antelación a los organizadores del curso.
 
 # Detalles del evento
 
