@@ -1,3 +1,9 @@
+#!/usr/bin/perl 
+
+# https://metacpan.org/pod/Bio::AlignIO
+
+#usage: bio_alignIO.pl input_file output_file
+
 use Bio::AlignIO;
 
 my $ia = shift;
