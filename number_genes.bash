@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# Enviroments
-
-
-
 # Execution 
 for chr in {1..22} X Y MT
   do
