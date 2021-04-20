@@ -1,24 +1,33 @@
+[Página anterior<<](transcriptomic.md)  [Menu Curso](README.md#cronograma-de-actividades)
+
 ```bash
 #trimming
 for file in raw_data/*168*; do fastp -i $file -l 140 -q 30 -o trimmed/${file##*/}; done
 
 for file in raw_data/*rep*; do fastp -i $file -l 70 -q 30 -o trimmed/${file##*/}; done
-
+```
+```bash
 ##mapping
 STAR --runMode genomeGenerate --genomeDir index --genomeFastaFiles index/KY030782.fna --genomeSAindexNbases 7
 
 for file in trimmed/*.fastq.gz; do STAR --genomeDir index --readFilesCommand gunzip -c --readFilesIn $file --outFileNamePrefix Star_out/${file##*/} --outSAMtype BAM Unsorted SortedByCoordinate --runThreadN 24; done
 
+```
+```bash
 #assambly
 for file in *.sortedByCoord.out.bam; do stringtie -p 16 -G ../index/KY030782.gtf -o ${file%Aligned.sortedByCoord.out.bam}.gtf -l ${file%Aligned.sortedByCoord.out.bam} $file; done
 
 cat *.gtf > merge.txt
-	
+
+```
+
+```bash
 stringtie --merge -p 24 -G ../index/KY030782.gtf -o stringtie_merged.gtf merge.txt
 
 for file in *.sortedByCoord.out.bam; do stringtie $file -e -B -p 24 -G stringtie_merged.gtf -o ballgown/${file%Aligned.sortedByCoord.out.bam}/${file%Aligned.sortedByCoord.out.bam}.gtf; done
 
 cd ballgown
+
 
 ../../prepDE.py3
 ```
@@ -43,14 +52,18 @@ barplot(prop.null,
         col=colData$color, xlab='% de conteos nulos')
 countData <- countData[rowSums(countData) > 0,]
 
-##Analisis de expresi?n diferencial diferencial
+```
+
+```r
+##Analisis de expresión diferencial diferencial
 library(DESeq2)
 dds <- DESeqDataSetFromMatrix(countData = countData, colData = colData, design = ~condition)
 dds <- DESeq(dds)
 
 #removiendo genes con muy bajo conteo
 dds <- dds[rowSums(counts(dds)) > 0,]
-
+```
+```r
 ##normalizando
 dds.norm <- estimateSizeFactors(dds)
 
@@ -68,7 +81,8 @@ wald.test <- nbinomWaldTest(dds.disp)
 res1 <- results(wald.test, contrast = c('condition','nopep_10min', 'pep_10min'), pAdjustMethod="BH")
 res2 <- results(wald.test, contrast = c('condition','nopep_20min', 'pep_20min'), pAdjustMethod="BH")
 summary(res1)
-
+```
+```r
 ##exportar resultados
 write.csv(res1, file = 'nopep_vs_pep_10min.csv')
 write.csv(res2, file = 'nopep_vs_pep_20min.csv')
@@ -80,7 +94,9 @@ View(rld)
 
 #PCA
 plotPCA(rlog)
+```
 
+```r
 ##VolcanoPlot
 res1Volcano <- results(wald.test, contrast = c('condition','nopep_10min', 'pep_10min'))
 keyvals1 <- rep('black', nrow(res1Volcano))
@@ -114,7 +130,9 @@ EnhancedVolcano(res1Volcano,
                 border = 'partial',
                 borderWidth = 1.5,
                 borderColour = 'black')
+```
 
+```r
 #heatmap
 rld <- rlog(wald.test, blind = FALSE)
 head(assay(rld), 3)
@@ -129,8 +147,9 @@ pheatmap(sampleDistMatrix,
          clustering_distance_rows = sampleDists,
          clustering_distance_cols = sampleDists,
          col = colors)
+```
 
-
+```r
 library("genefilter")
 topVarGenes <- head(order(rowVars(assay(rld)), decreasing = TRUE))
 mat  <- assay(rld)[ topVarGenes, ]
@@ -140,13 +159,13 @@ rownames(anno) <- colnames(countData)
 library("pheatmap")
 #probablemente bote error, pero con la correcion anterior no deberia
 pheatmap(mat, annotation_col = anno)
+```
 
-
+```r
 #diagrama de venn
 library(limma)
 venn_data <- data.frame(p10min = res1$log2FoldChange >= 1 | res1$log2FoldChange <= -1,
                         p20min = res2$log2FoldChange >= 1 | res2$log2FoldChange <= -1)
-
 vennDiagram(venn_data)
 
 #PCA
