@@ -32,6 +32,12 @@ bash preinstallUbuntu18.sh
 
 >Si cuenta con una maquina virtual con sistema operativo Linux (Sea Ubuntu 18.04 o 20.04 LTS) puede aplicar los comandos segun su versión. Aunque es recomendable que  instale **Windonws Subsystem Linux**, ya que consume menos memoria RAM.
 
+El script proporcionado en el curso instala por defecto los siguientes paquetes
+
+[fastqc](https://github.com/s-andrews/FastQC) [cutadapt](https://github.com/marcelm/cutadapt) [samtools](https://github.com/samtools/samtools) [subread](https://github.com/torkian/subread-1.6.1) [sortmerna](https://bioinfo.lifl.fr/RNA/sortmerna/) [rna-star](https://github.com/alexdobin/STAR) [ncbi-entrez-direct](https://www.ncbi.nlm.nih.gov/books/NBK25501/) [trim-galore](https://github.com/FelixKrueger/TrimGalore) [trimmomatic](https://github.com/timflutre/trimmomatic)
+
+Si cuenta con alguno de estos programas, es recomendable que instale personalmente los programas restantes
+
 ## Softwares y paquetes adicionales
 
 ### Paquetes de R
