@@ -1,4 +1,4 @@
-[Pagian anterior <<](1-3Linux.md)  [Menu Curso](Indice.md) [>>Siguiente Pagina](NGSLinux.md)
+[Pagian anterior <<](1-3Linux.md)  [Indice del Curso](Indice.md) [>>Siguiente Pagina](NGSLinux.md)
 
 <p align="center">
     <img src="https://www.umassmed.edu/globalassets/informatics/images/slideshow-home/informatics_home.jpg?format=jpeg&quality=80">
