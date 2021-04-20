@@ -1,4 +1,4 @@
-[Menu Curso](Indice.md) [>>Siguiente Pagina](4-6Linux.md)
+[Indice del Curso](Indice.md) [>>Siguiente Pagina](4-6Linux.md)
 
 ![](https://www.rti.org/sites/default/files/istock_56013860_molecule_computer_2500.jpg)
 
