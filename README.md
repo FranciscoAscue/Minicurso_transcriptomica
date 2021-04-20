@@ -59,9 +59,9 @@ Este repositorio contiene los scripts y archivos que se utilizarán durante el c
 |9:30 am - 10:00 am |-|Revisión de programas y soporte de instalación|-|
 |10:00 am - 12:00 pm|Francisco Ascue|Bloque I: Análisis de secuencias: mapeo, recuento y ensamblaje.|STAR, featureCounts, SortMeRNA, Samtools <br />  [ver manual](transcriptomic.md)|
 |12:00 pm - 1:30 pm|-|Almuerzo|-|
-|1:30 pm - 3:30 pm|Carlo Gustavo Mormontoy|Bloque II: Normalización y expresión diferencial.|DEseq2, Vennt, EnhancedVolcano|
-|3:30 pm - 4:30 pm|Carlo Gustavo Mormontoy|Bloque III: Anotación funcional y enriquecimiento.|Blast2GO, Cytoscape (BiNGO)|
-|4:30 pm - 6:00 pm|Francisco Ascue|Bloque IV: Expresión diferencial y miscellaneous.|ggplot, pheatmap, KEGG.db, GO,db|
+|1:30 pm - 3:30 pm|Carlo Gustavo Mormontoy|Bloque II: Normalización y expresión diferencial.|DEseq2, Vennt, EnhancedVolcano <br />  [ver manual](transcriptomic2.md)|
+|3:30 pm - 4:30 pm|Carlo Gustavo Mormontoy|Bloque III: Anotación funcional y enriquecimiento.|Blast2GO, Cytoscape (BiNGO) <br />  [ver manual](transcriptomic2.md)|
+|4:30 pm - 6:00 pm|Francisco Ascue|Bloque IV: Expresión diferencial y miscellaneous.|ggplot, pheatmap, KEGG.db, GO,db <br />  [ver manual](transcriptomic.md)|
 
 ## CERTIFICACIONES
 
