@@ -1,3 +1,6 @@
+
+[HOME](README.md) - [INFORMACION](README.md#organizador) - [INSTALACIONES](materiales.md) - [INDICE DEL CURSO](Indice.md)
+
 |INDICE                                            |
 |-------------------------------------------------|
 |[1. INTRODUCCION A BIOINFORMATICA](1-3Linux.md)  |
