@@ -1,4 +1,4 @@
-[Página anterior<<](transcriptomic.md)  [Menu Curso](README.md#cronograma-de-actividades)
+[Página anterior<<](transcriptomic.md)  [Menu Curso](Indice.md)
 
 ```bash
 #trimming
