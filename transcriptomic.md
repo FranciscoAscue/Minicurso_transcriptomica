@@ -1,4 +1,4 @@
-[Página anterior<<](NGSLinux.md)  [Menu Curso](Indice.md)  [>>Siguiente Página](trasncriptomic2.md)
+[Página anterior<<](NGSLinux.md)  [Menu Curso](Indice.md)  [>>Siguiente Página](transcriptomic2.md)
 
 Analisis de datos RNA-Seq
 ================
