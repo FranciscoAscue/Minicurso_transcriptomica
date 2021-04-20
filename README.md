@@ -81,6 +81,8 @@ Para los interesados en obtener el certificado de participación se requerirá s
 </p>
 
 ### Auspiciador
-Milrd
+<p align="left" width="100%">
+    <img width="14%" src="https://lh3.googleusercontent.com/IJZ9MWWSySrp2gP341RDfvmIa7wDtnvsMG0eTl_tVjfAx6Chc5V__53zqpEBnxTbh_WJ=s170">
+</p>
 
 
