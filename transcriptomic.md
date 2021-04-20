@@ -1,4 +1,4 @@
-[Página anterior<<](NGSLinux.md)  [Menu Curso](README.md#cronograma-de-actividades)
+[Página anterior<<](NGSLinux.md)  [Menu Curso](README.md#cronograma-de-actividades)  [>>Siguiente Página](trasncriptomic2.md)
 
 Analisis de datos RNA-Seq
 ================
