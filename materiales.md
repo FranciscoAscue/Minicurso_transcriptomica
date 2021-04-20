@@ -66,15 +66,29 @@ bash preinstallUbuntu18.sh
 |[4.6 CONTEO DE SECUENCIAS](transcriptomic.md#conteo-de-secuencias)|
 |[4.7 IMPORTAR A R](transcriptomic.md#importar-a-r)|
 
-
-
-
 ## Softwares y paquetes adicionales
 
-[SortMeRNA](https://bioinfo.lifl.fr/RNA/sortmerna/)   
-[DEseq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)     
-[Vennt](https://github.com/drpowell/vennt)     
-[EnhancedVolcano](https://github.com/kevinblighe/EnhancedVolcano)     
+### Paquetes de R
+```r
+
+install.package("BiocManager")
+library(BiocManager)
+BiocManager::install("ggplot2")
+BiocManager::install("DEseq2")
+BiocManager::install("Vennt")
+BiocManager::install("EnhancedVolcano")
+BiocManager::install("ggplot2")
+BiocManager::install("vsn")
+BiocManager::install("dplyr")
+BiocManager::install("pheatmap")
+BiocManager::install("PoiClaClu")
+BiocManager::install("genefilter")
+BiocManager::install("limma ")
+
+```
+
+### software con GUI.
+
 [Blast2GO](https://www.blast2go.com/) (Free Trial)    
 [Cytoscape](https://cytoscape.org/)     
 [BiNGO](https://www.psb.ugent.be/cbd/papers/BiNGO/Home.html)   
