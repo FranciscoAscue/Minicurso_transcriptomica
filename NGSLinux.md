@@ -1,4 +1,4 @@
-[Pagian anterior <<](4-6Linux.md)  [Menu Curso](Indice.md)  [>>Siguiente Pagina](transcriptomic.md)
+[Pagian anterior <<](4-6Linux.md)  [Indice del Curso](Indice.md)  [>>Siguiente Pagina](transcriptomic.md)
 
 Análisis de datos NGS
 =====================
