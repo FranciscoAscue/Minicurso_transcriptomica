@@ -1,4 +1,4 @@
-[Página anterior<<](transcriptomic.md)  [Menu Curso](Indice.md)
+[Página anterior<<](transcriptomic.md)  [Indice del Curso](Indice.md)
 
 ```bash
 #trimming
