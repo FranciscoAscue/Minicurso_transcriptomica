@@ -1,5 +1,5 @@
 
-[HOME](README.md) - [INSTALACIONES](materiales.md) - [INFORMACION](README.md#organizador)
+[HOME](README.md) - [INFORMACION](README.md#organizador) - [INSTALACIONES](materiales.md) - [INDICE DEL CURSO](indice.md)
 
 <img align="right" width="15%" src="Images/descarga.jpeg">
 
