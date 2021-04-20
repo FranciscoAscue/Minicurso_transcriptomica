@@ -12,7 +12,7 @@ git clone https://github.com/FranciscoAscue/Curso_transcriptomica.git
 ```
 ## Instalar programas
 
-Para la instalación de programas ejecutar los sripts según sea el caso:
+Para la instalación de programas ejecutar los scripts según sea el caso:
 
 >**Ubuntu 20.04 LTS**
 
