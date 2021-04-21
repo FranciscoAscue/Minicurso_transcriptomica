@@ -44,7 +44,7 @@ Si cuenta con alguno de estos programas, es recomendable que instale personalmen
 ### Paquetes de R
 ```r
 
-install.package("BiocManager")
+install.packages("BiocManager")
 library(BiocManager)
 BiocManager::install("ggplot2")
 BiocManager::install("DEseq2")
