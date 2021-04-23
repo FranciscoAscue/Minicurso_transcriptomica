@@ -56,7 +56,7 @@ BiocManager::install("dplyr")
 BiocManager::install("pheatmap")
 BiocManager::install("PoiClaClu")
 BiocManager::install("genefilter")
-BiocManager::install("limma ")
+BiocManager::install("limma")
 
 ```
 
