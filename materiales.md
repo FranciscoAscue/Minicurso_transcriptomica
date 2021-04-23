@@ -48,7 +48,6 @@ install.packages("BiocManager")
 library(BiocManager)
 BiocManager::install("ggplot2")
 BiocManager::install("DEseq2")
-BiocManager::install("Vent")
 BiocManager::install("EnhancedVolcano")
 BiocManager::install("vsn")
 BiocManager::install("dplyr")
@@ -58,6 +57,8 @@ BiocManager::install("genefilter")
 BiocManager::install("limma")
 
 ```
+[Vennt](https://github.com/drpowell/vennt)
+
 
 ### software con GUI.
 
