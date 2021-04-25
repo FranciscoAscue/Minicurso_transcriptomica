@@ -40,28 +40,33 @@ Este repositorio contiene los scripts y archivos que se utilizarán durante el c
 ## Cronograma de actividades
 
 **Linux para Bionformatica**
+**Sabado 24/04/21**
 
 | Horario  |  Presentador  |  Actividad | Programas a utilizar |
 |:----------:|:-------------:|:-----------:|:---------------------:|
 |1:30 pm-2:00 pm |Francisco Ascue|Introducción|-|
-|2 pm - 2:30 pm |Francisco Ascue| Entorno Linux (¿ Por qué usar Linux ?), Comandos prácticos|bash, awk <br />  [ver manual](1-3Linux.md)|
-|2:30 pm - 3:30 pm|Francisco Ascue|Programas y lenguajes para Bioinformática|biopython, bioconductor, bioperl. <br /> [ver manual](1-3Linux.md)|
+|2 pm - 3:30 pm |Francisco Ascue| Entorno Linux (¿ Por qué usar Linux ?), Comandos prácticos|bash, awk <br />  [ver manual](1-3Linux.md)|
 |3:30 pm - 4:00 pm|-|Receso|-|
-|4:00 pm - 5:00 pm|Francisco Ascue|Pipelines y Scripts para Bioinformática|bash script <br /> [ver manual](4-6Linux.md)|
-|5:00 pm - 6:00 pm|Francisco Ascue|Archivos y formatos para datos de NGS|[FastQ](Images/FastQ.jpg),[SAM](Images/SAM.jpg), [GFF3](Images/gff3.jpg), [GTF](Images/gtf.jpg), [VCF](Images/vcf.png) <br /> [ver manual](NGSLinux.md)|
-|6:00 pm - 7:30 pm|Francisco Ascue|Procesamiento de datos de NGS|fastqc, trimmomatic, bowtie2, spades <br /> [ver manual](NGSLinux.md)|
+|4:00 pm - 5:30 pm|Francisco Ascue|Programas y lenguajes para Bioinformática|biopython, bioconductor, bioperl. <br /> [ver manual](1-3Linux.md)|
+|5:30 pm - 6:00 pm|Francisco Ascue|Pipelines y Scripts para Bioinformática|bash script <br /> [ver manual](4-6Linux.md)|
 
-**RNA-seq para el Análisis transcriptomico**
+**Domingo 25/04/21**
 
 | Horario  |  Presentador  |  Actividad | Programas a utilizar |
 |:----------:|:-------------:|:-----------:|:---------------------:|
-|09:00 am-9:30 am |Carlo Gustavo Mormontoy|Introducción a Transcriptomica.|-|
-|9:30 am - 10:00 am |-|Revisión de programas y soporte de instalación|-|
-|10:00 am - 12:00 pm|Francisco Ascue|Bloque I: Análisis de secuencias: mapeo, recuento y ensamblaje.|STAR, featureCounts, SortMeRNA, Samtools <br />  [ver manual](transcriptomic.md)|
-|12:00 pm - 1:30 pm|-|Almuerzo|-|
-|1:30 pm - 3:30 pm|Carlo Gustavo Mormontoy|Bloque II: Normalización y expresión diferencial.|DEseq2, Vennt, EnhancedVolcano <br />  [ver manual](transcriptomic2.md)|
-|3:30 pm - 4:30 pm|Carlo Gustavo Mormontoy|Bloque III: Anotación funcional y enriquecimiento.|Blast2GO, Cytoscape (BiNGO) <br />  [ver manual](transcriptomic2.md)|
-|4:30 pm - 6:00 pm|Francisco Ascue|Bloque IV: Expresión diferencial y miscellaneous.|ggplot, pheatmap, KEGG.db, GO,db <br />  [ver manual](transcriptomic.md)|
+|10:00 pm - 11:30 pm|Francisco Ascue|Archivos y formatos para datos de NGS|[FastQ](Images/FastQ.jpg),[SAM](Images/SAM.jpg), [GFF3](Images/gff3.jpg), [GTF](Images/gtf.jpg), [VCF](Images/vcf.png) <br /> [ver manual](NGSLinux.md)|
+|11:30 pm - 12:30 pm|Francisco Ascue|Procesamiento de datos de NGS|fastqc, trimmomatic, bowtie2, spades <br /> [ver manual](NGSLinux.md)|
+|12:30 pm - 2:00 pm |-|Almuerzo|-|
+|2:00 pm - 3:00 pm|Francisco Ascue|Procesamiento de datos de NGS|fastqc, trimmomatic, bowtie2, spades <br /> [ver manual](NGSLinux.md)|
+|3:00 am - 6:00 pm|Francisco Ascue|Bloque I: Análisis de secuencias: mapeo, recuento y ensamblaje.|STAR, featureCounts, SortMeRNA, Samtools <br />  [ver manual](transcriptomic.md)|
+
+**Sabado 01/05/21**
+
+| Horario  |  Presentador  |  Actividad | Programas a utilizar |
+|:----------:|:-------------:|:-----------:|:---------------------:|
+|2:00 pm - 4:00 pm|Carlo Gustavo Mormontoy|Bloque II: Normalización y expresión diferencial.|DEseq2, Vennt, EnhancedVolcano <br />  [ver manual](transcriptomic2.md)|
+|4:00 pm - 6:00 pm|Carlo Gustavo Mormontoy|Bloque III: Anotación funcional y enriquecimiento.|Blast2GO, Cytoscape (BiNGO) <br />  [ver manual](transcriptomic2.md)|
+|-:-- pm - -:-- pm|Francisco Ascue|Bloque IV: Expresión diferencial y miscellaneous.|ggplot, pheatmap, KEGG.db, GO,db <br />  [ver manual](transcriptomic.md)|
 
 ## CERTIFICACIONES
 
