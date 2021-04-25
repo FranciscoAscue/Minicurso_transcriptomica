@@ -1,4 +1,4 @@
-[Pagian anterior <<](4-6Linux.md)  [Indice del Curso](Indice.md)  [>>Siguiente Pagina](transcriptomic.md)
+[Página anterior <<](4-6Linux.md)  [Indice del Curso](Indice.md)  [>>Siguiente Pagina](transcriptomic.md)
 
 Análisis de datos NGS
 =====================
@@ -188,4 +188,4 @@ quast.py -r refseq.fasta -e -o outputdir fasta_assemblyScaffold.fa
 
 
 
-[Pagian anterior <<](4-6Linux.md)  [Menu Curso](README.md#cronograma-de-actividades)  [>>Siguiente Pagina](transcriptomic.md)
+[Página anterior <<](4-6Linux.md)  [Menu Curso](README.md#cronograma-de-actividades)  [>>Siguiente Pagina](transcriptomic.md)
