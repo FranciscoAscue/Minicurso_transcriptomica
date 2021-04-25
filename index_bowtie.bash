@@ -17,7 +17,7 @@ echo "mkdir -p ${OD}"
 
 mkdir -p ${IDX}
 
-echo "bowtie2-build -threads 30 ${REF} ${IDX}/cavpor3"
-bowtie2-build -threads 30 ${REF} ${IDX}/cavpor3
+echo "bowtie2-build -threads 2 ${REF} ${IDX}/cavpor3"
+bowtie2-build -threads 2 ${REF} ${IDX}/cavpor3
 
 echo "Finished at ´date´"
