@@ -40,6 +40,7 @@ Este repositorio contiene los scripts y archivos que se utilizarán durante el c
 ## Cronograma de actividades
 
 **Linux para Bionformatica**
+
 **Sabado 24/04/21**
 
 | Horario  |  Presentador  |  Actividad | Programas a utilizar |
