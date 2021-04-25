@@ -13,7 +13,7 @@ Este repositorio contiene los scripts y archivos que se utilizarán durante el c
 |                          |                     |
 |--------------------------|---------------------|
 |Apertura de inscripciones | `15 de marzo del 2021`|
-|Fecha del evento	| `24 y 25 de abril del 2021`|
+|Fecha del evento	| `24, 25 de abril y 1 de mayo del 2021`|
 |Cierre de inscripciones | `4 de abril del 2021`|
 |Fecha de publicación de seleccionados | `11 de abril del 2021`|
 |Lugar del evento| `Virtual mediante la plataforma zoom`|
