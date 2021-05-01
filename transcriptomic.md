@@ -144,6 +144,9 @@ multiqc .
 ## FILTRADO DE rRNA
 
 ```bash
+
+wget -P sortmerna_db https://github.com/biocore/sortmerna/archive/2.1b.zip
+
 ## sortmerna
 
     # Guardar en una variable los rRNA databases
@@ -200,10 +203,24 @@ wget -O NC_000021.9.gff3 "https://www.ncbi.nlm.nih.gov/sviewer/viewer.cgi?db=nuc
 ```
 #### Convertimos el archivo gff3 a gtf
 ```bash
+## instalación
+
+sudo apt install gffread
+
 
 gffread -E -O -T NC_000021.9.gff -o NC_000021.9.gtf
 
 ```
+### Indexar el genoma con STAR
+
+| Parámetro | Descripción |
+| ---- | ---- |
+| `--runMode` | indica el tipo de opcion que utilizará STAR, en este caso queremos generar un índice del genoma por lo que utilizamos la flag `genomeGenerate`|
+| `--genomeDir` | indica donde se guardaran los resultados del indice y la ubicación de los archivos del genoma |
+| `--genomeFastaFiles` | indica donde estan almacenadas las secuencias del genoma en formato `FASTA` |
+| `--sjdbGTFfile` | sj: splice junction db: database GTFfile: archivo GTF indica la ubicación del archivo GTF para mejorar e improvisar el mapeo dado el modelo de los genes |
+| `--sjdbOverhang` | Especifica el largo a considerar de la secuencia genómica alrededor del splice junction, este valor esta ligado al largo de los reads y deberia ser `max(ReadLength) - 1`  |
+| `--runThreadN` | total de hebras que se ejecutaran en paralelo, este número no debe sobrepasar la cantidad de cores que tiene un computador y pruebas de escalamiento deberian ser ejecutadas para calcular el óptimo |
 
     STAR \
     --runMode genomeGenerate \
@@ -211,6 +228,21 @@ gffread -E -O -T NC_000021.9.gff -o NC_000021.9.gtf
     --genomeFastaFiles genome/NC_000021.9.fna \
     --sjdbGTFfile annotation/NC_000021.9.gtf \
     --runThreadN 2
+
+``` bash 
+STAR --runMode genomeGenerate --genomeDir genome/star_index/ --genomeSAindexNbases 7 --genomeFastaFiles genome/NC_000932.1.fasta --sjdbGTFfile genome/NC_000932.1.gtf --runThreadN 2
+```
+
+### Alinear el genoma
+
+| Parámetro | Descripción |
+| ---- | ---- |
+| `--readFilesIn` | archivo de reads a mapear |
+| `--genomeDir` | indica donde esta alojado el genoma |
+| `--runThreadN`| cantidad de hebras |
+| `--outSAMType`| tipo de archivo `SAM` o `BAM` en este caso indicamos `BAM`|
+| `SortedByCoordinate`| Ordenar el archivo BAM por las coordenadas del genoma |
+| `--outFileNamePrefix`| Prefijo para los archivos de salida |
 
 #### Command
 
@@ -225,6 +257,9 @@ gffread -E -O -T NC_000021.9.gff -o NC_000021.9.gtf
     --outSAMtype BAM SortedByCoordinate \
     --quantMode GeneCounts
 
+```bash
+STAR --genomeDir ../../../genome/star_index/ --readFilesIn ../../trimmed/NC_000932.1_6_trimmed.fq --runThreadN 2 --outSAMtype BAM SortedByCoordinate --limitBAMsortRAM 12000000000 --quantMode GeneCounts
+```
     # Move the BAM file into the correct folder
     mv -v results/4_aligned_sequences/sampleAligned.sortedByCoord.out.bam results/4_aligned_sequences/aligned_bam/
 
