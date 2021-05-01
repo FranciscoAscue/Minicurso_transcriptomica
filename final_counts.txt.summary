@@ -1,0 +1,13 @@
+Status	SRR849504_21.bam	SRR849505_21.bam	SRR849506_21.bam	SRR849507_21.bam	SRR849508_21.bam	SRR849509_21.bam	SRR849510_21.bam
+Assigned	161155	132305	81105	209088	154918	106377	145501
+Unassigned_Unmapped	0	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0	0
+Unassigned_MultiMapping	1018688	1239538	6925408	1166858	901272	1721112	1223164
+Unassigned_Secondary	0	0	0	0	0	0	0
+Unassigned_Nonjunction	0	0	0	0	0	0	0
+Unassigned_NoFeatures	17773	23241	10708	14605	16685	16215	15858
+Unassigned_Overlapping_Length	0	0	0	0	0	0	0
+Unassigned_Ambiguity	10694	9114	33645	9325	8825	11360	9573
